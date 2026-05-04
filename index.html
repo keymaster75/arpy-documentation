@@ -2,59 +2,129 @@
 <html lang="sr">
 <head>
   <meta charset="UTF-8">
-  <title>ARPy – revizorski PDF alat</title>
+  <title>ARPy – Audit Report Python Tool</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      background: #0f172a;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #020617, #0f172a);
       color: #e2e8f0;
     }
 
     .container {
-      max-width: 900px;
+      max-width: 1100px;
       margin: auto;
       padding: 40px 20px;
     }
 
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 40px;
+      align-items: center;
+    }
+
     h1 {
-      font-size: 2.5em;
+      font-size: 3em;
       margin-bottom: 10px;
     }
 
     h2 {
-      margin-top: 40px;
+      margin-top: 50px;
       color: #38bdf8;
     }
 
     p {
       line-height: 1.6;
+      font-size: 1.05em;
+    }
+
+    .logo {
+      width: 100%;
+      border-radius: 18px;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.5);
     }
 
     .box {
       background: #1e293b;
-      padding: 20px;
-      border-radius: 10px;
+      padding: 22px;
+      border-radius: 14px;
       margin-top: 20px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+
+    .feature {
+      background: #1e293b;
+      padding: 18px;
+      border-radius: 14px;
+      transition: 0.2s;
+    }
+
+    .feature:hover {
+      transform: translateY(-4px);
+      background: #273449;
+    }
+
+    .screens {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .screens img {
+      width: 100%;
+      border-radius: 12px;
+      background: white;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.45);
     }
 
     .cta {
       display: inline-block;
-      margin-top: 20px;
-      padding: 12px 20px;
+      margin-top: 25px;
+      padding: 14px 24px;
       background: #38bdf8;
-      color: #000;
+      color: #020617;
       text-decoration: none;
-      border-radius: 6px;
+      border-radius: 8px;
       font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .cta:hover {
+      background: #0ea5e9;
+    }
+
+    .note {
+      font-size: 0.95em;
+      opacity: 0.75;
+      margin-top: 6px;
     }
 
     .footer {
-      margin-top: 60px;
+      margin-top: 70px;
       font-size: 0.9em;
-      opacity: 0.7;
+      opacity: 0.65;
+      border-top: 1px solid #334155;
+      padding-top: 20px;
+      text-align: center;
+    }
+
+    @media (max-width: 800px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 2.2em;
+      }
     }
   </style>
 </head>
@@ -63,44 +133,87 @@
 
 <div class="container">
 
-  <h1>ARPy</h1>
-  <p>Alat za bržu pripremu revizorskih PDF izveštaja</p>
+  <section class="hero">
+    <div>
+      <h1>ARPy</h1>
+      <p><strong>Audit Report Python Tool</strong></p>
+      <p>
+        Automatizuj pripremu revizorskih izveštaja —
+        od Word/PDF dokumenata do finalnog profesionalnog PDF-a
+        sa memorandumom, potpisima i pravilnim redosledom.
+      </p>
+      <a href="#kontakt" class="cta">Zatraži demo</a>
+    </div>
+
+    <div>
+      <img src="assets/arpy-logo.png" alt="ARPy logo" class="logo">
+    </div>
+  </section>
+
+  <h2>Šta ARPy rešava</h2>
+
+  <div class="features">
+    <div class="feature">📄 Spajanje Word i PDF dokumenata</div>
+    <div class="feature">🏢 Automatski memorandum</div>
+    <div class="feature">✍️ Potpis i pečat</div>
+    <div class="feature">📑 Finalni PDF</div>
+    <div class="feature">🧩 Profili izveštaja</div>
+    <div class="feature">⚡ Ušteda vremena</div>
+  </div>
+
+  <h2>Režimi rada</h2>
 
   <div class="box">
     <p>
-      ARPy automatizuje proces izrade završnih izveštaja:
-      od Word dokumenata do finalnog PDF-a sa memorandumom,
-      potpisima i pravilnim redosledom.
+      ARPy nudi dva režima rada:
+      <strong>Čarobnjak</strong> za brz i jednostavan workflow,
+      i <strong>Napredni režim</strong> za potpunu kontrolu nad dokumentima,
+      prilozima i PDF obradom.
     </p>
   </div>
 
-  <h2>⚙️ Šta radi</h2>
-  <div class="box">
-    <ul>
-      <li>Spaja Word i PDF dokumente</li>
-      <li>Dodaje memorandum</li>
-      <li>Umeće potpis i pečat</li>
-      <li>Generiše finalni PDF</li>
-    </ul>
+  <div class="screens">
+    <div>
+      <img src="assets/arpy-carobnjak.png" alt="ARPy čarobnjak">
+      <p class="note">Početni režim (Čarobnjak)</p>
+    </div>
+
+    <div>
+      <img src="assets/arpy-napredni.png" alt="ARPy napredni režim">
+      <p class="note">Napredni režim</p>
+    </div>
   </div>
 
-  <h2>📸 Pregled aplikacije</h2>
+  <h2>Tipičan workflow</h2>
+
   <div class="box">
-    <p>(Ovde će ići screenshot aplikacije)</p>
+    <ol>
+      <li>Unos osnovnih podataka</li>
+      <li>Dodavanje dokumenata (Mišljenje, Obrasci, Prilozi)</li>
+      <li>Automatska priprema</li>
+      <li>Memorandum + potpis</li>
+      <li>Finalni PDF izveštaj</li>
+    </ol>
   </div>
 
-  <h2>🚀 Zašto ARPy</h2>
+  <h2>Zašto ARPy</h2>
+
   <div class="box">
     <p>
-      Smanjuje ručni rad, ubrzava proces i smanjuje mogućnost greške
-      prilikom pripreme revizorskih izveštaja.
+      Umesto ručnog rada u Word/Acrobat okruženju,
+      ARPy automatizuje ceo proces i smanjuje mogućnost greške.
     </p>
   </div>
 
-  <a href="#" class="cta">Zatraži demo</a>
+  <h2 id="kontakt">Kontakt</h2>
+
+  <div class="box">
+    <p>Za demo ili više informacija:</p>
+    <p><strong>(ovde dodaj email ili LinkedIn)</strong></p>
+  </div>
 
   <div class="footer">
-    © ARPy – Interni alat za revizorska društva
+    © ARPy — prezentaciona stranica | Izvorni kod nije javno dostupan
   </div>
 
 </div>
