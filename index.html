@@ -46,6 +46,10 @@
       font-size: 1.05em;
     }
 
+    ul, ol {
+      line-height: 1.7;
+    }
+
     .logo {
       width: 100%;
       border-radius: 18px;
@@ -59,20 +63,28 @@
       margin-top: 20px;
     }
 
-    .features {
+    .features,
+    .scenario-grid,
+    .process-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 18px;
+      margin-top: 20px;
     }
 
-    .feature {
+    .feature,
+    .scenario-card,
+    .process-card {
       background: #1e293b;
       padding: 20px;
       border-radius: 14px;
+      border: 1px solid #334155;
       transition: 0.2s;
     }
 
-    .feature:hover {
+    .feature:hover,
+    .scenario-card:hover,
+    .process-card:hover {
       transform: translateY(-4px);
       background: #273449;
     }
@@ -114,24 +126,6 @@
       margin-top: 6px;
     }
 
-    ul, ol {
-      line-height: 1.7;
-    }
-
-    .scenario-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 18px;
-      margin-top: 20px;
-    }
-
-    .scenario-card {
-      background: #1e293b;
-      padding: 20px;
-      border-radius: 14px;
-      border: 1px solid #334155;
-    }
-
     .highlight {
       color: #38bdf8;
       font-weight: bold;
@@ -167,9 +161,9 @@
       <h1>ARPy</h1>
       <p><strong>Audit Report Python Tool</strong></p>
       <p>
-        Automatizuj pripremu revizorskih izveštaja —
-        od Word i PDF dokumenata do finalnog profesionalnog PDF-a
-        sa memorandumom, potpisima, pečatom i pravilnim redosledom priloga.
+        Desktop aplikacija za automatizaciju tehničke pripreme revizorskih izveštaja —
+        od Word i PDF dokumenata do finalnog profesionalnog PDF-a sa memorandumom,
+        potpisom, pečatom i pravilnim redosledom priloga.
       </p>
       <a href="#kontakt" class="cta">Zatraži demo</a>
     </div>
@@ -183,8 +177,9 @@
 
   <div class="box">
     <p>
-      Završna priprema revizorskog izveštaja često nije stručno najteži deo posla,
-      ali jeste jedan od najdosadnijih i najrizičnijih za tehničke greške.
+      Završna priprema revizorskog izveštaja često nije najstručniji deo posla,
+      ali jeste deo u kome se lako prave tehničke greške — posebno kada se radi
+      više klijenata u kratkom roku.
     </p>
 
     <ul>
@@ -192,7 +187,7 @@
       <li>dodavanje memoranduma samo na određene strane</li>
       <li>pozicioniranje potpisa i pečata</li>
       <li>kontrola redosleda dokumenata i priloga</li>
-      <li>ponavljanje istih koraka za veliki broj klijenata</li>
+      <li>ponavljanje istih koraka za veliki broj izveštaja</li>
     </ul>
 
     <p>
@@ -206,74 +201,111 @@
   <div class="features">
 
     <div class="feature">
-      <strong>📄 Spajanje dokumenata bez greške</strong>
+      <strong>📄 Spajanje Word i PDF dokumenata</strong>
       <p>
-        Automatsko objedinjavanje Word i PDF dokumenata u unapred definisan redosled:
-        mišljenje, obrasci, napomene i prilozi.
+        Objedinjavanje mišljenja, finansijskih obrazaca, napomena i priloga
+        u jedan finalni PDF, po unapred definisanom redosledu.
       </p>
-      <p class="note">Nema više ručnog prevlačenja fajlova i stalne provere da li je nešto izostavljeno.</p>
+      <p class="note">Manje ručnog prevlačenja fajlova i manje rizika da se neki prilog preskoči.</p>
     </div>
 
     <div class="feature">
       <strong>🏢 Memorandum samo gde treba</strong>
       <p>
         Memorandum se primenjuje selektivno — na primer samo na mišljenje,
-        bez uticaja na finansijske obrasce ili priloge.
+        bez uticaja na finansijske obrasce, napomene ili priloge.
       </p>
-      <p class="note">Rešava čest problem kada se memorandum ručno prenese i na strane gde ne treba.</p>
+      <p class="note">Korisno kada različiti delovi izveštaja imaju različita pravila izgleda.</p>
     </div>
 
     <div class="feature">
-      <strong>✍️ Potpis i pečat na pravom mestu</strong>
+      <strong>✍️ Potpis i pečat</strong>
       <p>
-        Potpis i pečat se mogu postaviti prema pravilima:
-        na poslednju stranu mišljenja ili uz definisani tekst u dokumentu.
+        Automatsko umetanje potpisa i pečata na definisane strane ili uz
+        prepoznatljiv tekstualni orijentir u dokumentu.
       </p>
-      <p class="note">Manje ručnog nameštanja u PDF editoru i manje pomeranja elemenata.</p>
+      <p class="note">Smanjuje potrebu za ručnim podešavanjem u PDF editoru.</p>
     </div>
 
     <div class="feature">
       <strong>📑 Kontrola strukture izveštaja</strong>
       <p>
-        ARPy pomaže da finalni PDF ima pravilan redosled i kompletnu strukturu,
-        uključujući glavne dokumente, obrasce, napomene i dodatke.
+        ARPy pomaže da finalni dokument ima logičan redosled:
+        mišljenje, finansijski izveštaji, napomene, prilozi i dodatna dokumentacija.
       </p>
-      <p class="note">Posebno korisno kada se radi više izveštaja u kratkom roku.</p>
+      <p class="note">Posebno važno kada se obrađuje veliki broj izveštaja.</p>
     </div>
 
     <div class="feature">
-      <strong>🧩 Profili za različite tipove izveštaja</strong>
+      <strong>🧩 Profili izveštaja</strong>
       <p>
-        Pravila se mogu podesiti po tipu izveštaja:
-        redovni izveštaji, budžetski korisnici, posebni formati ili interni obrasci.
+        Različiti tipovi izveštaja mogu imati različita pravila:
+        RFI, budžetski korisnici, posebni formati, interni obrasci ili posebni klijenti.
       </p>
       <p class="note">Jednom podešena pravila mogu se koristiti ponovo.</p>
     </div>
 
     <div class="feature">
-      <strong>⚡ Automatizacija ponavljajućih koraka</strong>
+      <strong>🧙 Čarobnjak za jednostavan rad</strong>
       <p>
-        Koraci koji se ponavljaju kod svakog klijenta postaju deo jednog kontrolisanog procesa.
+        Korisnik prolazi kroz nekoliko jasnih koraka: izbor fajlova,
+        izbor profila, obrada i generisanje finalnog PDF-a.
       </p>
-      <p class="note">Više vremena ostaje za sadržaj, pregled i kvalitet izveštaja.</p>
+      <p class="note">Pogodno za korisnike koji ne žele da ulaze u napredna podešavanja.</p>
+    </div>
+
+    <div class="feature">
+      <strong>🛠️ Napredni režim</strong>
+      <p>
+        Dodatni alati za korisnike kojima treba veća kontrola nad PDF obradom,
+        prilozima, podešavanjima, memorandumima i potpisima.
+      </p>
+      <p class="note">Za situacije kada dokument odstupa od standardnog toka.</p>
     </div>
 
     <div class="feature">
       <strong>🧠 Manje tehničkih grešaka</strong>
       <p>
         Standardizovan postupak smanjuje rizik od pogrešnog redosleda,
-        izostavljenog dokumenta, pogrešnog potpisa ili memoranduma.
+        izostavljenog dokumenta, pogrešnog memoranduma ili pogrešno postavljenog potpisa.
       </p>
       <p class="note">Korisno za internu kontrolu pre slanja ili predaje izveštaja.</p>
     </div>
 
     <div class="feature">
-      <strong>📊 Pogodno za veći broj izveštaja</strong>
+      <strong>⚡ Automatizacija ponavljajućih koraka</strong>
       <p>
-        Najveća korist se vidi kod revizorskih firmi koje godišnje pripremaju veći broj izveštaja
-        i žele isti standard obrade za sve klijente.
+        Koraci koji se ponavljaju kod svakog klijenta postaju deo jednog
+        kontrolisanog procesa.
+      </p>
+      <p class="note">Više vremena ostaje za sadržaj, pregled i kvalitet izveštaja.</p>
+    </div>
+
+    <div class="feature">
+      <strong>📊 Veći broj izveštaja</strong>
+      <p>
+        Najveća korist se vidi kod revizorskih firmi koje godišnje pripremaju
+        veći broj izveštaja i žele isti standard obrade za sve klijente.
       </p>
       <p class="note">Ušteda raste sa brojem ponovljenih procesa.</p>
+    </div>
+
+    <div class="feature">
+      <strong>🗂️ Organizovan izlaz</strong>
+      <p>
+        Finalni fajlovi se čuvaju kroz predvidljiv i kontrolisan proces,
+        što olakšava pregled, arhiviranje i naknadno pronalaženje.
+      </p>
+      <p class="note">Manje haosa sa verzijama i ručno imenovanim fajlovima.</p>
+    </div>
+
+    <div class="feature">
+      <strong>🔐 Privatna desktop aplikacija</strong>
+      <p>
+        ARPy je desktop alat, pogodan za rad u internom okruženju firme,
+        bez potrebe da se dokumenti šalju na spoljne servise.
+      </p>
+      <p class="note">Važno za poverljive klijentske i revizorske dokumente.</p>
     </div>
 
   </div>
@@ -328,6 +360,30 @@
     </p>
   </div>
 
+  <h2>Kako izgleda proces</h2>
+
+  <div class="process-grid">
+    <div class="process-card">
+      <h3>1. Priprema</h3>
+      <p>Unose se osnovni podaci o klijentu i biraju se dokumenti koji ulaze u izveštaj.</p>
+    </div>
+
+    <div class="process-card">
+      <h3>2. Pravila</h3>
+      <p>Bira se profil izveštaja koji određuje gde idu memorandum, potpis, pečat i prilozi.</p>
+    </div>
+
+    <div class="process-card">
+      <h3>3. Obrada</h3>
+      <p>ARPy automatski obrađuje Word/PDF dokumente i priprema ih za finalno spajanje.</p>
+    </div>
+
+    <div class="process-card">
+      <h3>4. Finalni PDF</h3>
+      <p>Dobija se gotov PDF dokument spreman za pregled, slanje, potpisivanje ili arhiviranje.</p>
+    </div>
+  </div>
+
   <h2>Režimi rada</h2>
 
   <div class="box">
@@ -362,13 +418,20 @@
     </ol>
   </div>
 
-  <h2>Namena</h2>
+  <h2>Za koga je ARPy</h2>
 
   <div class="box">
     <p>
       ARPy je namenjen revizorskim društvima i organizacijama koje često pripremaju
       standardizovane PDF izveštaje i žele da smanje ručni rad u Word/Acrobat okruženju.
     </p>
+
+    <ul>
+      <li>revizorske firme sa većim brojem klijenata</li>
+      <li>timovi koji žele standardizovan proces pripreme izveštaja</li>
+      <li>organizacije koje rade sa velikim brojem Word/PDF dokumenata</li>
+      <li>korisnici kojima je važna kontrola, redosled i konzistentan izgled finalnog PDF-a</li>
+    </ul>
   </div>
 
   <h2 id="kontakt">Kontakt</h2>
