@@ -2,5 +2,10 @@
   "version": "0.7.1",
   "download_url": "https://github.com/keymaster75/arpy-documentation/releases/latest",
   "notes_url": "https://github.com/keymaster75/arpy-documentation/releases/latest",
-  "release_notes": "Default printer settings, update check, PDF workflow improvements."
-}
+  "release_notes": "- Added online update check using GitHub release metadata
+- Added release notes display in update notifications
+- Added startup update check option
+- Added dedicated update notification dialog
+- Added option to ignore a specific update version
+- Improved update dialog usability"
+}"
