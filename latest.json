@@ -1,8 +1,8 @@
 {
-  "version": "0.7.2",
+  "version": "0.7.3",
   "download_url": "https://github.com/keymaster75/arpy-documentation/releases/latest",
-  "installer_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.7.2/ARPy_Setup_0.7.2.exe",
-  "installer_filename": "ARPy_Setup_0.7.2.exe",
+  "installer_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.7.3/ARPy_Setup_0.7.3.exe",
+  "installer_filename": "ARPy_Setup_0.7.3.exe",
   "notes_url": "https://github.com/keymaster75/arpy-documentation/releases/latest",
-  "release_notes": "..."
+  "release_notes": "- Improved detection of digitally signed PDF documents\n- Added safeguards for A4 normalization\n- Skip Fit A4 for documents already in A4 format\n- Warn when A4 normalization changes page count\n- Warn when A4 normalization significantly increases file size\n- Improved installer download workflow\n- Added installer cache cleanup\n- Improved update notification dialogs"
 }
