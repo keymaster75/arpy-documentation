@@ -131,6 +131,23 @@
       font-weight: bold;
     }
 
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: #0f172a;
+      border: 1px solid #38bdf8;
+      color: #e0f2fe;
+      font-size: 0.92em;
+    }
+
     .footer {
       margin-top: 70px;
       font-size: 0.9em;
@@ -165,6 +182,12 @@
         potpisom, pečatom, pravilnim redosledom priloga i kontrolisanim workflow procesom.
       </p>
       <a href="#kontakt" class="cta">Zatraži demo</a>
+
+      <div class="badge-row">
+        <span class="badge">Aktuelna verzija: 0.7.3</span>
+        <span class="badge">PDF safeguards</span>
+        <span class="badge">Auto update workflow</span>
+      </div>
     </div>
 
     <div>
@@ -342,6 +365,25 @@
       <p class="note">Važno za poverljive klijentske i revizorske dokumente.</p>
     </div>
 
+    <div class="feature">
+      <strong>🛡️ PDF zaštite i preflight kontrole</strong>
+      <p>
+        ARPy pre kreiranja finalnog dokumenta proverava potencijalne probleme:
+        zastarele priloge, digitalno potpisane PDF-ove, promenu broja strana i
+        veliki rast veličine fajla tokom A4 obrade.
+      </p>
+      <p class="note">Posebno korisno tokom revizorske sezone, kada se obrađuje veliki broj izveštaja.</p>
+    </div>
+
+    <div class="feature">
+      <strong>⬇️ Provera i preuzimanje novih verzija</strong>
+      <p>
+        Aplikacija može proveriti dostupnost nove verzije, prikazati release notes,
+        preuzeti installer i pokrenuti instalaciju iz samog ARPy-ja.
+      </p>
+      <p class="note">Update metadata se čita iz GitHub latest.json fajla.</p>
+    </div>
+
   </div>
 
   <h2>Realni scenario iz prakse</h2>
@@ -482,6 +524,30 @@
 
     <p class="note">
       Cilj nije samo ubrzanje rada, već i stabilniji i predvidljiviji proces pripreme dokumentacije.
+    </p>
+  </div>
+
+  <h2>Novosti u verziji 0.7.3</h2>
+
+  <div class="box">
+    <p>
+      Verzija <span class="highlight">0.7.3</span> donosi dodatne zaštite u PDF workflow-u
+      i zaokruženiji update sistem.
+    </p>
+
+    <ul>
+      <li>bolja detekcija digitalno potpisanih i formularskih PDF dokumenata</li>
+      <li>preskakanje Fit A4 obrade ako je PDF već u A4 formatu</li>
+      <li>upozorenje ako A4 normalizacija promeni broj strana</li>
+      <li>upozorenje ako A4 normalizacija značajno poveća veličinu fajla</li>
+      <li>preflight upozorenja pre kreiranja FINAL PDF dokumenta</li>
+      <li>direktan download installera kroz update dijalog</li>
+      <li>privremeno čuvanje installera u <code>%TEMP%\ARPyUpdates</code></li>
+    </ul>
+
+    <p class="note">
+      Fokus verzije 0.7.3 je stabilniji rad sa prilozima i smanjenje rizika od tehničkih grešaka
+      u periodu kada se obrađuje veliki broj revizorskih izveštaja.
     </p>
   </div>
 
