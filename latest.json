@@ -1,8 +1,8 @@
 {
-  "version": "0.7.4",
+  "version": "0.7.5",
   "download_url": "https://github.com/keymaster75/arpy-documentation/releases/latest",
-  "installer_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.7.4/ARPy_Setup_0.7.4.exe",
-  "installer_filename": "ARPy_Setup_0.7.4.exe",
+  "installer_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.7.5/ARPy_Setup_0.7.5.exe",
+  "installer_filename": "ARPy_Setup_0.7.5.exe",
   "notes_url": "https://github.com/keymaster75/arpy-documentation/releases/latest",
-  "release_notes": "- Added selective rasterization for signed/form PDF pages\n- Preserved normal PDF pages as vector/text pages during A4 conversion\n- Reduced PDF size compared to full rasterization workflow\n- Improved handling of APR-signed financial statement forms\n- Kept visual appearance of signatures while avoiding active invalid signature warnings in final PDFs"
+  "release_notes": "- Added confirmation message after TOC generation\n- Added warning when selected opinion PDF may not match the selected client\n- Added warning for unusually large opinion PDFs\n- Added warning when opinion PDF appears rasterized/scanned\n- Improved Wizard safety checks before creating FINAL PDF"
 }
