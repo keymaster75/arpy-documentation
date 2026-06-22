@@ -1,8 +1,8 @@
 {
-  "version": "0.7.5",
+  "version": "0.7.6",
   "download_url": "https://github.com/keymaster75/arpy-documentation/releases/latest",
-  "installer_url": "https://github.com/keymaster75/arpy-documentation/releases/download/V0.7.5/ARPy_Setup_0.7.5.exe",
-  "installer_filename": "ARPy_Setup_0.7.5.exe",
+  "installer_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.7.6/ARPy_Setup_0.7.6.exe",
+  "installer_filename": "ARPy_Setup_0.7.6.exe",
   "notes_url": "https://github.com/keymaster75/arpy-documentation/releases/latest",
-  "release_notes": "- Added confirmation message after TOC generation\n- Added warning when selected opinion PDF may not match the selected client\n- Added warning for unusually large opinion PDFs\n- Added warning when opinion PDF appears rasterized/scanned\n- Improved Wizard safety checks before creating FINAL PDF"
+  "release_notes": "- Added first-run admin user setup for new installations\n- Added Obriši sve option in Wizard forms step\n- Improved Wizard form type dialog behavior\n- Prevented multiple Promeni tip dialogs from opening at the same time\n- Changed default signature anchor mode to Po tekstu na zadnjoj strani"
 }
