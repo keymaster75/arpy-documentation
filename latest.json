@@ -1,8 +1,8 @@
 {
-  "version": "0.7.7",
+  "version": "0.7.8",
   "download_url": "https://github.com/keymaster75/arpy-documentation/releases/latest",
-  "installer_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.7.7/ARPy_Setup_0.7.7.exe",
-  "installer_filename": "ARPy_Setup_0.7.7.exe",
+  "installer_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.7.8/ARPy_Setup_0.7.8.exe",
+  "installer_filename": "ARPy_Setup_0.7.8.exe",
   "notes_url": "https://github.com/keymaster75/arpy-documentation/releases/latest",
-  "release_notes": "- Added contextual Wizard help\n- Added descriptions below Wizard step titles\n- Added Clear All Forms action\n- Added TOC generation confirmation\n- Auto-close Change Type dialog when switching steps\n- Improved Wizard navigation and About dialog"
+  "release_notes": "- Added configurable Strict PDF compression settings\n- Added PDF compression DPI and JPEG quality options in Settings\n- Added detailed PDF analysis popup in PDF Preparation\n- Added selective Fit A4 option for signed/form PDF files\n- Wizard Strict compression now uses values from Settings\n- Improved PDF Preparation workflow and diagnostics"
 }
