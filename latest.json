@@ -1,8 +1,8 @@
 {
-  "version": "0.7.6",
+  "version": "0.7.7",
   "download_url": "https://github.com/keymaster75/arpy-documentation/releases/latest",
-  "installer_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.7.6/ARPy_Setup_0.7.6.exe",
-  "installer_filename": "ARPy_Setup_0.7.6.exe",
+  "installer_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.7.7/ARPy_Setup_0.7.7.exe",
+  "installer_filename": "ARPy_Setup_0.7.7.exe",
   "notes_url": "https://github.com/keymaster75/arpy-documentation/releases/latest",
-  "release_notes": "- Added first-run admin user setup for new installations\n- Added Obriši sve option in Wizard forms step\n- Improved Wizard form type dialog behavior\n- Prevented multiple Promeni tip dialogs from opening at the same time\n- Changed default signature anchor mode to Po tekstu na zadnjoj strani"
+  "release_notes": "- Added contextual Wizard help\n- Added descriptions below Wizard step titles\n- Added Clear All Forms action\n- Added TOC generation confirmation\n- Auto-close Change Type dialog when switching steps\n- Improved Wizard navigation and About dialog"
 }
