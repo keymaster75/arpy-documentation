@@ -1,8 +1,8 @@
 {
-  "version": "0.7.8",
+  "version": "0.7.9",
   "download_url": "https://github.com/keymaster75/arpy-documentation/releases/latest",
-  "installer_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.7.8/ARPy_Setup_0.7.8.exe",
-  "installer_filename": "ARPy_Setup_0.7.8.exe",
+  "installer_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.7.9/ARPy_Setup_0.7.9.exe",
+  "installer_filename": "ARPy_Setup_0.7.9.exe",
   "notes_url": "https://github.com/keymaster75/arpy-documentation/releases/latest",
-  "release_notes": "- Added configurable Strict PDF compression settings\n- Added PDF compression DPI and JPEG quality options in Settings\n- Added detailed PDF analysis popup in PDF Preparation\n- Added selective Fit A4 option for signed/form PDF files\n- Wizard Strict compression now uses values from Settings\n- Improved PDF Preparation workflow and diagnostics"
+  "release_notes": "- Added Word QC summary with OK/warning counts\n- Added Word document image/object count in Word QC\n- Added Copy Result action for Word QC output\n- Improved Word QC usability\n- Improved TOC generation message wording in Wizard Step 3\n- Prevented TOC popup when changing form type in Wizard Step 2"
 }
