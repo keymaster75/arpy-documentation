@@ -184,13 +184,14 @@
       <a href="#kontakt" class="cta">Zatraži demo</a>
 
       <div class="badge-row">
-        <span class="badge">Aktuelna verzija: 0.7.8</span>
+        <span class="badge">Aktuelna verzija: 0.7.9</span>
         <span class="badge">Selective PDF rasterization</span>
         <span class="badge">Wizard safety checks</span>
         <span class="badge">First Run setup</span>
         <span class="badge">UX improvements</span>
         <span class="badge">Configurable PDF compression</span>
         <span class="badge">PDF Preparation tools</span>
+        <span class="badge">Word QC improvements</span>
         <span class="badge">Auto update workflow</span>
       </div>
     </div>
@@ -417,6 +418,18 @@
     </div>
 
     <div class="feature">
+    <strong>📝 Word QC provera</strong>
+    <p>
+      Ugrađena kontrola Word mišljenja pre izvoza u PDF.
+      Proverava godinu, naziv firme, datum potpisa,
+      grad, oznaku revizora i osnovne elemente mišljenja.
+    </p>
+    <p class="note">
+      Rezime upozorenja pomaže da se potencijalni problemi uoče pre generisanja PDF-a.
+    </p>
+</div>
+    
+    <div class="feature">
       <strong>⬇️ Provera i preuzimanje novih verzija</strong>
       <p>
         Aplikacija može proveriti dostupnost nove verzije, prikazati release notes,
@@ -568,35 +581,34 @@
     </p>
   </div>
 
-  <h2>Novosti u verziji 0.7.8</h2>
+  <h2>Novosti u verziji 0.7.9</h2>
 
-  <div class="box">
-    <p>
-      Verzija <span class="highlight">0.7.8</span> donosi podešavanja PDF kompresije
-      i unapređenja taba PDF priprema, sa fokusom na sigurniju obradu potpisanih,
-      formularskih i velikih PDF dokumenata.
-    </p>
+<div class="box">
+  <p>
+    Verzija <span class="highlight">0.7.9</span> donosi unapređenja Word QC
+    provere i dodatna UX poboljšanja u Čarobnjaku.
+  </p>
 
-    <ul>
-      <li>podesiva Strict PDF kompresija kroz podešavanja aplikacije</li>
-      <li>DPI i JPEG kvalitet za Low, Medium i High režim kompresije</li>
-      <li>Čarobnjak koristi vrednosti iz podešavanja umesto fiksnih vrednosti iz koda</li>
-      <li>detaljan PDF analysis popup u tabu PDF priprema</li>
-      <li>prikaz broja strana, veličine, A4 statusa, teksta, formularskih polja i potpisa</li>
-      <li>selektivni Fit A4 za digitalno potpisane i formularske PDF dokumente</li>
-      <li>bezbedniji PDF workflow za dokumente koji mogu izgubiti validnost ili kvalitet pri obradi</li>
-    </ul>
+  <ul>
+    <li>Word QC rezime sa brojem uspešnih provera i upozorenja</li>
+    <li>prikaz broja slika/objekata u Word dokumentu</li>
+    <li>dugme za kopiranje Word QC rezultata u clipboard</li>
+    <li>jasniji prikaz rezultata Word QC analize</li>
+    <li>ispravljeno iskakanje TOC poruke nakon promene tipa obrasca</li>
+    <li>poboljšane poruke u koraku generisanja sadržaja</li>
+  </ul>
 
-    <p class="note">
-      Fokus verzije 0.7.8 je bolja kontrola PDF veličine i kvalitetnija dijagnostika
-      pre spajanja i završne obrade izveštaja.
-    </p>
-  </div>
+  <p class="note">
+    Fokus verzije 0.7.9 je dodatna kontrola Word dokumentacije
+    i sitna UX unapređenja svakodnevnog rada.
+  </p>
+</div>
 
   <h2>Kratka istorija novijih verzija</h2>
 
   <div class="box">
     <ul>
+      <li><strong>0.7.9</strong> — Word QC rezime, broj slika/objekata, kopiranje rezultata i UX poboljšanja Čarobnjaka.</li>
       <li><strong>0.7.8</strong> — podesiva Strict PDF kompresija, unapređena PDF priprema i selektivni Fit A4 u PDF alatima.</li>
       <li><strong>0.7.7</strong> — vizuelno i korisničko unapređenje Čarobnjaka, opisi koraka, help i About polish.</li>
       <li><strong>0.7.6</strong> — First Run podešavanje admin korisnika, „Obriši sve obrasce” i UX unapređenja Čarobnjaka.</li>
