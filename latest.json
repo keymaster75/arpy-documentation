@@ -1,8 +1,8 @@
 {
-  "version": "0.8.0",
+  "version": "0.8.1",
   "download_url": "https://github.com/keymaster75/arpy-documentation/releases/latest",
-  "installer_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.8.0/ARPy_Setup_0.8.0.exe",
-  "installer_filename": "ARPy_Setup_0.8.0.exe",
+  "installer_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.8.1/ARPy_Setup_0.8.1.exe",
+  "installer_filename": "ARPy_Setup_0.8.1.exe",
   "notes_url": "https://github.com/keymaster75/arpy-documentation/releases/latest",
-  "release_notes": "- Added configurable PDF compression profiles (Low/Medium/High)\n- Improved PDF Preparation tools and analysis\n- Added Word QC summary and Copy Result feature\n- Added workflow safety checks for opinion and management letter documents\n- Added year validation warnings\n- Improved New Report cleanup workflow\n- Improved Wizard usability and messages\n- Added Quick Setup enhancements\n- Improved About/License dialog behavior\n- Multiple PDF handling, safety and UX improvements"
+  "release_notes": "- Added tooltips for main window action buttons\n- Improved Help documentation with DOCX requirements and workflow notes\n- Expanded Wizard Step 4 help for PDF options and warnings\n- Improved post-install launch behavior\n- Clarified Word/PDF workflow guidance"
 }
