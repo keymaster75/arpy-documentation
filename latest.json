@@ -1,8 +1,8 @@
 {
-  "version": "0.8.1",
+  "version": "0.8.2",
   "download_url": "https://github.com/keymaster75/arpy-documentation/releases/latest",
-  "installer_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.8.1/ARPy_Setup_0.8.1.exe",
-  "installer_filename": "ARPy_Setup_0.8.1.exe",
+  "installer_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.8.2/ARPy_Setup_0.8.2.exe",
+  "installer_filename": "ARPy_Setup_0.8.2.exe",
   "notes_url": "https://github.com/keymaster75/arpy-documentation/releases/latest",
-  "release_notes": "- Added tooltips for main window action buttons\n- Improved Help documentation with DOCX requirements and workflow notes\n- Expanded Wizard Step 4 help for PDF options and warnings\n- Improved post-install launch behavior\n- Clarified Word/PDF workflow guidance"
+  "release_notes": "- Added Word QC warning for possible blank ending page\n- Improved Batch Print cleanup after successful printing\n- Updated Word Tools descriptions for TOC and Word QC workflow\n- Added scrollbars to Word Tools help sections"
 }
