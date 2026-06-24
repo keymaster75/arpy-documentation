@@ -1,8 +1,8 @@
 {
-  "version": "0.8.2",
+  "version": "0.8.3",
   "download_url": "https://github.com/keymaster75/arpy-documentation/releases/latest",
-  "installer_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.8.2/ARPy_Setup_0.8.2.exe",
-  "installer_filename": "ARPy_Setup_0.8.2.exe",
+  "installer_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.8.3/ARPy_Setup_0.8.3.exe",
+  "installer_filename": "ARPy_Setup_0.8.3.exe",
   "notes_url": "https://github.com/keymaster75/arpy-documentation/releases/latest",
-  "release_notes": "- Added Word QC warning for possible blank ending page\n- Improved Batch Print cleanup after successful printing\n- Updated Word Tools descriptions for TOC and Word QC workflow\n- Added scrollbars to Word Tools help sections"
+  "release_notes": "- Fixed preprocessing of digitally signed/form PDF documents before building Prilozi PDF\n- Preserved visible electronic signature appearance in flattened signed PDFs\n- Prevented invalid signature warnings in generated Prilozi/FINAL workflow\n- Improved Prilozi workflow to use processed PDF paths consistently\n- Added annotation-aware selective rasterization for signed/form PDF pages"
 }
