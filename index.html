@@ -184,7 +184,7 @@
       <a href="#kontakt" class="cta">Zatraži demo</a>
 
       <div class="badge-row">
-        <span class="badge">Aktuelna verzija: 0.8.3</span>
+        <span class="badge">Aktuelna verzija: 0.9.0</span>
         <span class="badge">Selective PDF rasterization</span>
         <span class="badge">Wizard safety checks</span>
         <span class="badge">First Run setup</span>
@@ -196,6 +196,7 @@
         <span class="badge">Help & UX polish</span>
         <span class="badge">Batch print polish</span>
         <span class="badge">Signed PDF handling</span>
+        <span class="badge">FINAL compression workflow</span>
         <span class="badge">Auto update workflow</span>
       </div>
     </div>
@@ -585,25 +586,27 @@
     </p>
   </div>
 
-  <h2>Novosti u verziji 0.8.3</h2>
+  <h2>Novosti u verziji 0.9.0</h2>
 
 <div class="box">
   <p>
-    Verzija <span class="highlight">0.8.3</span> rešava važan problem
-    sa obradom digitalno potpisanih PDF dokumenata u Prilozi i FINAL workflow-u.
+    Verzija <span class="highlight">0.9.0</span> donosi značajno unapređenje
+    PDF workflow-a, posebno kod digitalno potpisanih i formularskih PDF dokumenata.
   </p>
 
   <ul>
-    <li>ispravljena obrada digitalno potpisanih i formularskih PDF dokumenata pre kreiranja Priloga</li>
-    <li>sačuvan vizuelni prikaz elektronskog potpisa nakon PDF obrade</li>
+    <li>ispravljena obrada digitalno potpisanih i formularskih PDF obrazaca pre spajanja u Prilozi PDF</li>
+    <li>sačuvan vizuelni prikaz elektronskog potpisa nakon flatten/raster obrade</li>
     <li>uklonjena pojava „Invalid Signature” upozorenja u generisanim Prilozima i FINAL PDF-u</li>
-    <li>Prilozi workflow sada dosledno koristi obrađene PDF fajlove</li>
-    <li>unapređena selektivna rasterizacija za strane sa potpisom/formularskim poljima</li>
+    <li>ispravljena logika FINAL PDF optimizacije i Strict kompresije</li>
+    <li>Strict kompresija sada radi nad stvarno generisanim FINAL PDF dokumentom</li>
+    <li>Strict kompresija automatski uključuje opciju „Optimizuj FINAL PDF”</li>
+    <li>Low / Medium / High režimi aktivni su samo kada je uključena Strict kompresija</li>
   </ul>
 
   <p class="note">
-    Fokus verzije 0.8.3 je pouzdanija obrada elektronski potpisanih priloga,
-    posebno kod PDF napomena i sličnih dokumenata dobijenih iz eksternih sistema.
+    Fokus verzije 0.9.0 je stabilniji rad sa elektronski potpisanim PDF prilozima,
+    pouzdanija kompresija velikih FINAL PDF fajlova i jasniji workflow u Čarobnjaku.
   </p>
 </div>
 
@@ -611,6 +614,7 @@
 
   <div class="box">
     <ul>
+      <li><strong>0.9.0</strong> — stabilizovan signed/form PDF workflow, očuvan vizuelni elektronski potpis, uklonjena Invalid Signature upozorenja i unapređena FINAL Strict kompresija.</li>
       <li><strong>0.8.3</strong> — ispravka obrade digitalno potpisanih PDF priloga, očuvan vizuelni potpis i uklonjena Invalid Signature upozorenja.</li>
       <li><strong>0.8.2</strong> — Word QC upozorenje za praznu završnu stranu, Batch Print cleanup i unapređena Word Tools objašnjenja.</li>
       <li><strong>0.8.1</strong> — tooltip opisi, dopunjen Help, objašnjenja za DOCX, [SADRZAJ] marker i PDF opcije u Čarobnjaku.</li>
