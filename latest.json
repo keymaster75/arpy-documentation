@@ -1,8 +1,8 @@
 {
-  "version": "0.8.3",
+  "version": "0.9.0",
   "download_url": "https://github.com/keymaster75/arpy-documentation/releases/latest",
-  "installer_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.8.3/ARPy_Setup_0.8.3.exe",
-  "installer_filename": "ARPy_Setup_0.8.3.exe",
+  "installer_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.9.0/ARPy_Setup_0.9.0.exe",
+  "installer_filename": "ARPy_Setup_0.9.0.exe",
   "notes_url": "https://github.com/keymaster75/arpy-documentation/releases/latest",
-  "release_notes": "- Fixed preprocessing of digitally signed/form PDF documents before building Prilozi PDF\n- Preserved visible electronic signature appearance in flattened signed PDFs\n- Prevented invalid signature warnings in generated Prilozi/FINAL workflow\n- Improved Prilozi workflow to use processed PDF paths consistently\n- Added annotation-aware selective rasterization for signed/form PDF pages"
+  "release_notes": "- Fixed signed/form PDF preprocessing before Prilozi merge\n- Preserved visible electronic signature appearance after flattening\n- Removed invalid signature warnings in generated Prilozi/FINAL workflow\n- Fixed FINAL compression checks to analyze the actual generated FINAL PDF\n- Improved Strict compression UI behavior and dependencies"
 }
