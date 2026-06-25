@@ -184,7 +184,7 @@
       <a href="#kontakt" class="cta">Zatraži demo</a>
 
       <div class="badge-row">
-        <span class="badge">Aktuelna verzija: 0.9.0</span>
+        <span class="badge">Aktuelna verzija: 0.9.1</span>
         <span class="badge">Selective PDF rasterization</span>
         <span class="badge">Wizard safety checks</span>
         <span class="badge">First Run setup</span>
@@ -197,6 +197,8 @@
         <span class="badge">Batch print polish</span>
         <span class="badge">Signed PDF handling</span>
         <span class="badge">FINAL compression workflow</span>
+        <span class="badge">PDF Quality Control</span>
+      <span class="badge">QC Report Dialog</span>
         <span class="badge">Auto update workflow</span>
       </div>
     </div>
@@ -433,6 +435,29 @@
       Rezime upozorenja pomaže da se potencijalni problemi uoče pre generisanja PDF-a.
     </p>
 </div>
+
+    <div class="feature">
+  <strong>🔎 PDF Quality Control</strong>
+  <p>
+    Nakon generisanja PDF mišljenja ili pisma rukovodstvu, ARPy automatski prikazuje
+    QC izveštaj sa osnovnim proverama kvaliteta PDF dokumenta.
+  </p>
+  <p class="note">
+    Proveravaju se broj strana, prazne strane, tip PDF-a, tekst, elektronski potpis,
+    formularska polja, veličina fajla i broj slika.
+  </p>
+</div>
+
+<div class="feature">
+  <strong>📋 QC Report Dialog</strong>
+  <p>
+    QC izveštaj se prikazuje u posebnom prozoru, uz mogućnost kopiranja,
+    čuvanja u TXT fajl i otvaranja generisanog PDF-a.
+  </p>
+  <p class="note">
+    Korisno za brzu proveru rezultata i lakše prijavljivanje problema.
+  </p>
+</div>
     
     <div class="feature">
       <strong>⬇️ Provera i preuzimanje novih verzija</strong>
@@ -586,34 +611,32 @@
     </p>
   </div>
 
-  <h2>Novosti u verziji 0.9.0</h2>
-
-<div class="box">
+  <div class="box">
   <p>
-    Verzija <span class="highlight">0.9.0</span> donosi značajno unapređenje
-    PDF workflow-a, posebno kod digitalno potpisanih i formularskih PDF dokumenata.
+    Verzija <span class="highlight">0.9.1</span> uvodi novi sloj kontrole kvaliteta
+    za PDF dokumente generisane iz Word-a.
   </p>
 
   <ul>
-    <li>ispravljena obrada digitalno potpisanih i formularskih PDF obrazaca pre spajanja u Prilozi PDF</li>
-    <li>sačuvan vizuelni prikaz elektronskog potpisa nakon flatten/raster obrade</li>
-    <li>uklonjena pojava „Invalid Signature” upozorenja u generisanim Prilozima i FINAL PDF-u</li>
-    <li>ispravljena logika FINAL PDF optimizacije i Strict kompresije</li>
-    <li>Strict kompresija sada radi nad stvarno generisanim FINAL PDF dokumentom</li>
-    <li>Strict kompresija automatski uključuje opciju „Optimizuj FINAL PDF”</li>
-    <li>Low / Medium / High režimi aktivni su samo kada je uključena Strict kompresija</li>
+    <li>dodat Opinion PDF QC nakon generisanja mišljenja revizora</li>
+    <li>dodat PDF QC nakon generisanja pisma rukovodstvu</li>
+    <li>uveden poseban QC Report Dialog za prikaz rezultata provere</li>
+    <li>QC izveštaj se može kopirati u Clipboard</li>
+    <li>QC izveštaj se može sačuvati kao TXT fajl</li>
+    <li>generisani PDF se može otvoriti direktno iz QC prozora</li>
+    <li>unapređena povratna informacija nakon Word → PDF obrade</li>
   </ul>
 
   <p class="note">
-    Fokus verzije 0.9.0 je stabilniji rad sa elektronski potpisanim PDF prilozima,
-    pouzdanija kompresija velikih FINAL PDF fajlova i jasniji workflow u Čarobnjaku.
+    Fokus verzije 0.9.1 je da ARPy ne samo generiše dokumente,
+    već odmah pomaže korisniku da proveri kvalitet PDF rezultata pre daljeg rada.
   </p>
 </div>
-
   <h2>Kratka istorija novijih verzija</h2>
 
   <div class="box">
     <ul>
+      <li><strong>0.9.1</strong> — uveden PDF Quality Control za mišljenje i pismo rukovodstvu, novi QC Report Dialog sa kopiranjem, TXT izvozom i otvaranjem PDF-a.</li>
       <li><strong>0.9.0</strong> — stabilizovan signed/form PDF workflow, očuvan vizuelni elektronski potpis, uklonjena Invalid Signature upozorenja i unapređena FINAL Strict kompresija.</li>
       <li><strong>0.8.3</strong> — ispravka obrade digitalno potpisanih PDF priloga, očuvan vizuelni potpis i uklonjena Invalid Signature upozorenja.</li>
       <li><strong>0.8.2</strong> — Word QC upozorenje za praznu završnu stranu, Batch Print cleanup i unapređena Word Tools objašnjenja.</li>
