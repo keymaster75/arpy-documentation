@@ -26,14 +26,18 @@
     <div class="screens">
 
         <div>
-            <img src="assets/arpy-carobnjak.png" alt="ARPy Čarobnjak">
+            <a href="assets/arpy-carobnjak.png" class="screenshot-link" data-lightbox>
+                <img src="assets/arpy-carobnjak.png" alt="ARPy Čarobnjak">
+            </a>
             <p class="note">
                 Čarobnjak — vođeni workflow za pripremu revizorskog izveštaja.
             </p>
         </div>
 
         <div>
-            <img src="assets/arpy-napredni.png" alt="ARPy napredni režim">
+            <a href="assets/arpy-napredni.png" class="screenshot-link" data-lightbox>
+                <img src="assets/arpy-napredni.png" alt="ARPy napredni režim">
+            </a>
             <p class="note">
                 Napredni režim — dodatna kontrola nad dokumentima, PDF obradom i podešavanjima.
             </p>
@@ -46,14 +50,18 @@
     <div class="screens">
 
         <div>
-            <img src="assets/arpy-final-qc.png" alt="ARPy FINAL PDF QC">
+            <a href="assets/arpy-final-qc.png" class="screenshot-link" data-lightbox>
+                <img src="assets/arpy-final-qc.png" alt="ARPy FINAL PDF QC">
+            </a>
             <p class="note">
                 FINAL PDF QC — završna tehnička provera kompletnog PDF izveštaja.
             </p>
         </div>
 
         <div>
-            <img src="assets/arpy-qc-report.png" alt="ARPy QC Report Dialog">
+            <a href="assets/arpy-qc-report.png" class="screenshot-link" data-lightbox>
+                <img src="assets/arpy-qc-report.png" alt="ARPy QC Report Dialog">
+            </a>
             <p class="note">
                 QC Report Dialog — pregled rezultata, kopiranje izveštaja i čuvanje u TXT fajl.
             </p>
@@ -66,14 +74,18 @@
     <div class="screens">
 
         <div>
-            <img src="assets/arpy-pdf-priprema.png" alt="ARPy PDF priprema">
+            <a href="assets/arpy-pdf-priprema.png" class="screenshot-link" data-lightbox>
+                <img src="assets/arpy-pdf-priprema.png" alt="ARPy PDF priprema">
+            </a>
             <p class="note">
                 PDF priprema — analiza, Fit A4, optimizacija i obrada posebnih PDF dokumenata.
             </p>
         </div>
 
         <div>
-            <img src="assets/arpy-settings.png" alt="ARPy podešavanja">
+            <a href="assets/arpy-settings.png" class="screenshot-link" data-lightbox>
+                <img src="assets/arpy-settings.png" alt="ARPy podešavanja">
+            </a>
             <p class="note">
                 Podešavanja — profili, štampači, PDF kompresija i pomoćne opcije.
             </p>
@@ -99,5 +111,48 @@
     </div>
 
 </div>
+
+<div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightbox-close">&times;</span>
+    <img src="" alt="" id="lightbox-img">
+</div>
+
+<script>
+    document.querySelectorAll("[data-lightbox]").forEach(function(link) {
+        link.addEventListener("click", function(event) {
+            event.preventDefault();
+
+            const lightbox = document.getElementById("lightbox");
+            const lightboxImg = document.getElementById("lightbox-img");
+
+            lightboxImg.src = this.href;
+            lightboxImg.alt = this.querySelector("img")?.alt || "";
+            lightbox.classList.add("active");
+        });
+    });
+
+    function closeLightbox() {
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+
+        lightbox.classList.remove("active");
+        lightboxImg.src = "";
+    }
+
+    document.getElementById("lightbox-close").addEventListener("click", closeLightbox);
+
+    document.getElementById("lightbox").addEventListener("click", function(event) {
+        if (event.target === this) {
+            closeLightbox();
+        }
+    });
+
+    document.addEventListener("keydown", function(event) {
+        if (event.key === "Escape") {
+            closeLightbox();
+        }
+    });
+</script>
+
 </body>
 </html>
