@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <title>ARPy – Čarobnjak</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="container">
+
+    <h1>ARPy Čarobnjak</h1>
+
+    <p><a href="index.html">← Nazad na početnu</a></p>
+
+    <div class="box">
+        <p>
+            Čarobnjak je preporučeni način rada u ARPy aplikaciji. Korak po korak vodi
+            korisnika kroz pripremu revizorskog izveštaja — od osnovnih podataka i izbora
+            dokumenata do kreiranja FINAL PDF-a i završne kontrole kvaliteta.
+        </p>
+    </div>
+
+    <h2>Pregled koraka</h2>
+
+    <div class="process-grid">
+
+        <div class="process-card">
+            <h3>1. Osnovni podaci</h3>
+            <p>
+                Unose se osnovni podaci o izveštaju: subjekt, tip izveštaja, naziv klijenta,
+                godina i output folder.
+            </p>
+            <p class="note">
+                Output folder je mesto gde ARPy čuva generisane PDF i TXT fajlove.
+            </p>
+        </div>
+
+        <div class="process-card">
+            <h3>2. Obrasci</h3>
+            <p>
+                Dodaju se PDF obrasci koji ulaze u priloge: bilans stanja, bilans uspeha,
+                ostali rezultat, kapital, tokovi gotovine, napomene i drugi dokumenti.
+            </p>
+            <p class="note">
+                Auto redosled može automatski sortirati obrasce po standardnom redosledu.
+            </p>
+        </div>
+
+        <div class="process-card">
+            <h3>3. Sadržaj i mišljenje</h3>
+            <p>
+                Povezuje se PDF mišljenja i izračunava tehnički sadržaj izveštaja.
+                Korisnik može preći na tab Mišljenje revizora ili Word alate.
+            </p>
+            <p class="note">
+                Preporučeno je proveriti Word QC pre izvoza mišljenja u PDF.
+            </p>
+        </div>
+
+        <div class="process-card">
+            <h3>4. Prilozi i FINAL</h3>
+            <p>
+                Kreira se Prilozi PDF, zatim FINAL PDF izveštaj. Po potrebi se pokreće
+                analiza PDF-a, FINAL QC, NACRT watermark ili dodatna obrada.
+            </p>
+            <p class="note">
+                FINAL QC je preporučena završna provera pre slanja, štampe ili potpisivanja.
+            </p>
+        </div>
+
+    </div>
+
+    <h2>Preporučeni workflow</h2>
+
+    <div class="box">
+        <ol>
+            <li>Popuniti osnovne podatke i izabrati output folder.</li>
+            <li>Dodati obrasce i proveriti njihov tip i redosled.</li>
+            <li>Pripremiti mišljenje revizora i generisati PDF mišljenja.</li>
+            <li>Izabrati PDF mišljenja u Čarobnjaku.</li>
+            <li>Izračunati sadržaj.</li>
+            <li>Kreirati Prilozi PDF.</li>
+            <li>Kreirati FINAL PDF.</li>
+            <li>Pokrenuti FINAL PDF QC.</li>
+            <li>Po potrebi otvoriti, sačuvati ili kopirati QC izveštaj.</li>
+        </ol>
+    </div>
+
+    <h2>Korisne opcije u Čarobnjaku</h2>
+
+    <div class="features">
+
+        <div class="feature">
+            <strong>Auto redosled</strong>
+            <p>
+                Automatski sortira obrasce prema očekivanom redosledu.
+            </p>
+            <p class="note">
+                Korisno kada se dodaje više PDF obrazaca odjednom.
+            </p>
+        </div>
+
+        <div class="feature">
+            <strong>Fit A4</strong>
+            <p>
+                Pokušava da uskladi PDF strane sa A4 formatom.
+            </p>
+            <p class="note">
+                Posebno korisno kod PDF dokumenata koji nisu pravilno formatirani.
+            </p>
+        </div>
+
+        <div class="feature">
+            <strong>Forsiraj Fit A4</strong>
+            <p>
+                Koristi jaču obradu kada standardni Fit A4 nije dovoljan.
+            </p>
+            <p class="note">
+                Koristiti pažljivo, naročito kod digitalno potpisanih ili formularskih PDF dokumenata.
+            </p>
+        </div>
+
+        <div class="feature">
+            <strong>Strict kompresija</strong>
+            <p>
+                Dodatno smanjuje veličinu FINAL PDF-a kada je dokument prevelik.
+            </p>
+            <p class="note">
+                Režimi Low, Medium i High podešavaju odnos veličine i čitljivosti.
+            </p>
+        </div>
+
+        <div class="feature">
+            <strong>FINAL QC</strong>
+            <p>
+                Pokreće završnu proveru kompletnog FINAL PDF-a.
+            </p>
+            <p class="note">
+                Proverava A4 format, broj strana, tekst, prazne strane, potpis, forme i veličinu.
+            </p>
+        </div>
+
+        <div class="feature">
+            <strong>Arhiviranje pomoćnih PDF fajlova</strong>
+            <p>
+                Po podešavanju korisnika, pomoćni PDF fajlovi mogu se prebaciti u
+                podfolder <strong>_arpy_temp</strong>.
+            </p>
+            <p class="note">
+                Glavni output folder ostaje pregledan, a međukoraci ostaju sačuvani.
+            </p>
+        </div>
+
+    </div>
+
+    <h2>Workflow dijagram</h2>
+
+    <div class="box">
+    <pre>
+Word mišljenje
+      │
+      ▼
+Word QC
+      │
+      ▼
+PDF mišljenja
+      │
+      ▼
+Obrasci + Napomene + Prilozi
+      │
+      ▼
+Prilozi PDF
+      │
+      ▼
+FINAL PDF
+      │
+      ▼
+FINAL PDF QC
+      │
+      ▼
+Isporuka / štampa / potpisivanje
+    </pre>
+    </div>
+
+    <h2>Praktični saveti</h2>
+
+    <div class="box">
+        <ul>
+            <li>Koristiti Čarobnjak kao podrazumevani način rada.</li>
+            <li>Uključiti Auto redosled ako se obrasci dodaju odjednom.</li>
+            <li>Pokrenuti Word QC pre izvoza mišljenja u PDF.</li>
+            <li>Pokrenuti FINAL QC pre slanja ili digitalnog potpisivanja.</li>
+            <li>Kod većih PDF fajlova prvo probati standardnu optimizaciju, pa tek onda Strict kompresiju.</li>
+            <li>Ako FINAL QC prijavi da dokument nije A4, uključiti Fit A4 ili Forsiraj Fit A4 i ponoviti kreiranje FINAL PDF-a.</li>
+            <li>Arhiviranje pomoćnih PDF fajlova ostaviti uključeno ako se želi uredniji output folder.</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        © ARPy — Wizard documentation
+    </div>
+
+</div>
+</body>
+</html>
