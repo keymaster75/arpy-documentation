@@ -184,7 +184,7 @@
       <a href="#kontakt" class="cta">Zatraži demo</a>
 
       <div class="badge-row">
-        <span class="badge">Aktuelna verzija: 0.9.1</span>
+       <span class="badge">Aktuelna verzija: 0.9.2</span>
         <span class="badge">Selective PDF rasterization</span>
         <span class="badge">Wizard safety checks</span>
         <span class="badge">First Run setup</span>
@@ -198,7 +198,9 @@
         <span class="badge">Signed PDF handling</span>
         <span class="badge">FINAL compression workflow</span>
         <span class="badge">PDF Quality Control</span>
-      <span class="badge">QC Report Dialog</span>
+        <span class="badge">QC Report Dialog</span>
+        <span class="badge">FINAL PDF QC</span>
+        <span class="badge">Persistent Wizard Settings</span>
         <span class="badge">Auto update workflow</span>
       </div>
     </div>
@@ -458,6 +460,20 @@
     Korisno za brzu proveru rezultata i lakše prijavljivanje problema.
   </p>
 </div>
+
+    <div class="feature">
+  <strong>✅ FINAL PDF Quality Control</strong>
+  <p>
+    Nakon kreiranja FINAL PDF-a moguće je pokrenuti završnu proveru kompletnog
+    dokumenta pre slanja klijentu ili digitalnog potpisivanja.
+  </p>
+
+  <p class="note">
+    Proveravaju se broj strana, A4 format, prisustvo teksta,
+    prazne strane, formularska polja, elektronski potpisi,
+    veličina PDF-a i osnovna statistika dokumenta.
+  </p>
+</div>
     
     <div class="feature">
       <strong>⬇️ Provera i preuzimanje novih verzija</strong>
@@ -548,8 +564,12 @@
     </div>
 
     <div class="process-card">
-      <h3>4. Finalni PDF</h3>
-      <p>Dobija se gotov PDF dokument spreman za pregled, slanje, potpisivanje ili arhiviranje.</p>
+      <h3>4. Finalni PDF i QC</h3>
+
+<p>
+Dobija se FINAL PDF, nakon čega se po želji može pokrenuti završna
+kontrola kvaliteta (FINAL PDF QC) pre slanja, štampe ili digitalnog potpisivanja.
+</p>
     </div>
 
   </div>
@@ -611,31 +631,54 @@
     </p>
   </div>
 
-  <div class="box">
-  <p>
-    Verzija <span class="highlight">0.9.1</span> uvodi novi sloj kontrole kvaliteta
-    za PDF dokumente generisane iz Word-a.
-  </p>
+  <h2>Novosti u verziji 0.9.2</h2>
 
-  <ul>
-    <li>dodat Opinion PDF QC nakon generisanja mišljenja revizora</li>
-    <li>dodat PDF QC nakon generisanja pisma rukovodstvu</li>
-    <li>uveden poseban QC Report Dialog za prikaz rezultata provere</li>
-    <li>QC izveštaj se može kopirati u Clipboard</li>
-    <li>QC izveštaj se može sačuvati kao TXT fajl</li>
-    <li>generisani PDF se može otvoriti direktno iz QC prozora</li>
-    <li>unapređena povratna informacija nakon Word → PDF obrade</li>
-  </ul>
+<div class="box">
 
-  <p class="note">
-    Fokus verzije 0.9.1 je da ARPy ne samo generiše dokumente,
-    već odmah pomaže korisniku da proveri kvalitet PDF rezultata pre daljeg rada.
-  </p>
+<p>
+Verzija <span class="highlight">0.9.2</span> uvodi završni nivo kontrole kvaliteta
+za kompletan FINAL PDF revizorskog izveštaja.
+</p>
+
+<ul>
+
+<li>dodat FINAL PDF QC u Koraku 4 Čarobnjaka</li>
+
+<li>nova završna provera FINAL PDF dokumenta</li>
+
+<li>provera broja strana</li>
+
+<li>provera A4 formata</li>
+
+<li>provera prisustva teksta</li>
+
+<li>detekcija praznih strana</li>
+
+<li>detekcija formularskih polja</li>
+
+<li>detekcija aktivnih elektronskih potpisa</li>
+
+<li>provera veličine PDF dokumenta</li>
+
+<li>QC Report Dialog sada se koristi za Mišljenje, Pismo rukovodstvu i FINAL PDF</li>
+
+<li>Auto redosled obrazaca je podrazumevano uključen i pamti se između pokretanja programa</li>
+
+</ul>
+
+<p class="note">
+
+ARPy sada pruža kontrolu kvaliteta tokom gotovo celog procesa izrade
+revizorske dokumentacije — od Word dokumenta do završnog FINAL PDF-a.
+
+</p>
+
 </div>
   <h2>Kratka istorija novijih verzija</h2>
 
   <div class="box">
     <ul>
+      <li><strong>0.9.2</strong> — uveden FINAL PDF QC, završna kontrola kvaliteta FINAL PDF dokumenta, Auto redosled obrazaca kao podrazumevana opcija i pamćenje korisničkih podešavanja Čarobnjaka.</li>
       <li><strong>0.9.1</strong> — uveden PDF Quality Control za mišljenje i pismo rukovodstvu, novi QC Report Dialog sa kopiranjem, TXT izvozom i otvaranjem PDF-a.</li>
       <li><strong>0.9.0</strong> — stabilizovan signed/form PDF workflow, očuvan vizuelni elektronski potpis, uklonjena Invalid Signature upozorenja i unapređena FINAL Strict kompresija.</li>
       <li><strong>0.8.3</strong> — ispravka obrade digitalno potpisanih PDF priloga, očuvan vizuelni potpis i uklonjena Invalid Signature upozorenja.</li>
