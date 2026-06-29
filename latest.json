@@ -2,14 +2,18 @@
   "version": "0.9.4",
   "release_date": "2026-06-29",
   "minimum_version": "0.8.0",
+
   "download_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.9.4/ARPy_Setup_0.9.4.exe",
+
   "release_notes_url": "https://keymaster75.github.io/arpy-documentation/release-notes.html",
+
   "mandatory": false,
+
   "notes": [
     "FINAL PDF QC sada prepoznaje rotirane strane.",
     "Dodata automatska ispravka rotacije PDF stranica.",
     "Poboljšana detekcija praznih i skoro praznih strana.",
-    "Word QC sada prepoznaje i tekstualne formate datuma.",
+    "Word QC sada prepoznaje tekstualne formate datuma.",
     "Unapređen Quality Control workflow.",
     "Brojna poboljšanja stabilnosti i pouzdanosti aplikacije."
   ]
