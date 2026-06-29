@@ -4,10 +4,15 @@
   "minimum_version": "0.8.0",
 
   "download_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.9.4/ARPy_Setup_0.9.4.exe",
+  "installer_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.9.4/ARPy_Setup_0.9.4.exe",
+  "installer_filename": "ARPy_Setup_0.9.4.exe",
 
   "release_notes_url": "https://keymaster75.github.io/arpy-documentation/release-notes.html",
+  "notes_url": "https://keymaster75.github.io/arpy-documentation/release-notes.html",
 
   "mandatory": false,
+
+  "release_notes": "FINAL PDF QC sada prepoznaje rotirane strane.\nDodata automatska ispravka rotacije PDF stranica.\nPoboljšana detekcija praznih i skoro praznih strana.\nWord QC sada prepoznaje tekstualne formate datuma.\nUnapređen Quality Control workflow.",
 
   "notes": [
     "FINAL PDF QC sada prepoznaje rotirane strane.",
