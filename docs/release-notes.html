@@ -16,6 +16,36 @@
 <h2>Kratka istorija novijih verzija</h2>
 
     <section class="release">
+        <h2>Verzija 0.9.5 <span class="release-date">29.06.2026</span></h2>
+
+        <p>
+            Verzija 0.9.5 donosi hitno unapređenje PDF obrade i dodatne preflight provere
+            za završnicu revizorske sezone.
+        </p>
+
+        <h3>Nova funkcionalnost</h3>
+        <ul>
+            <li>Fit to A4 sada bezbednije čuva vizuelnu orijentaciju PDF strana.</li>
+            <li>Strane sa PDF rotation metadata obrađuju se raster pristupom kako bi ostale pravilno prikazane.</li>
+            <li>Dodata preflight provera ulaznih obrazaca na moguće prazne strane.</li>
+            <li>Čarobnjak upozorava korisnika pre kreiranja Priloga ako PDF obrasci sadrže moguće prazne strane.</li>
+        </ul>
+
+        <h3>Poboljšanja</h3>
+        <ul>
+            <li>Smanjen rizik da APR obrasci budu nenamerno okrenuti tokom A4 normalizacije.</li>
+            <li>Poboljšan QC workflow za rad sa rotacijom i praznim stranama.</li>
+            <li>Veća sigurnost kod pripreme velikog broja izveštaja u kratkom roku.</li>
+        </ul>
+
+        <h3>Ispravljeno</h3>
+        <ul>
+            <li>Rešen problem gde je Fit to A4 mogao da rotira pojedine APR strane u FINAL PDF-u.</li>
+            <li>Sprečeno da prazne strane iz ulaznih PDF obrazaca prođu neprimećeno do završnog FINAL QC-a.</li>
+        </ul>
+    </section>
+
+    <section class="release">
         <h2>Verzija 0.9.4 <span class="release-date">29.06.2026</span></h2>
 
         <p>
@@ -48,6 +78,7 @@
 
 <div class="box">
     <ul>
+        <li><strong>0.9.5</strong> — bezbedniji Fit to A4 za PDF strane sa rotation metadata, sprečeno nenamerno okretanje APR obrazaca i dodata preflight provera ulaznih obrazaca na moguće prazne strane.</li>
         <li><strong>0.9.3</strong> — opciono arhiviranje pomoćnih PDF fajlova u podfolder <strong>_arpy_temp</strong>, uredniji output folder i unapređeno čuvanje korisničkih podešavanja.</li>
         <li><strong>0.9.2</strong> — uveden FINAL PDF QC, završna kontrola kvaliteta FINAL PDF dokumenta, Auto redosled obrazaca kao podrazumevana opcija i pamćenje korisničkih podešavanja Čarobnjaka.</li>
         <li><strong>0.9.1</strong> — uveden PDF Quality Control za mišljenje i pismo rukovodstvu, novi QC Report Dialog sa kopiranjem, TXT izvozom i otvaranjem PDF-a.</li>

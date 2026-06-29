@@ -23,7 +23,7 @@
       <a href="#kontakt" class="cta">Zatraži demo</a>
 
       <div class="badge-row">
-        <span class="badge">Aktuelna verzija: 0.9.4</span>
+        <span class="badge">Aktuelna verzija: 0.9.5</span>
         <span class="badge">Selective PDF rasterization</span>
         <span class="badge">Wizard safety checks</span>
         <span class="badge">First Run setup</span>
@@ -42,6 +42,8 @@
         <span class="badge">Persistent Wizard Settings</span>
         <span class="badge">Temporary PDF Archive</span>
         <span class="badge">Rotation Fix</span>
+        <span class="badge">Safe A4 Fit</span>
+        <span class="badge">Blank Page Preflight</span>
         <span class="badge">Auto update workflow</span>
       </div>
     </div>
@@ -379,25 +381,25 @@ kontrola kvaliteta (FINAL PDF QC) pre slanja, štampe ili digitalnog potpisivanj
 
 
 
-  <h2>Novosti u verziji 0.9.4</h2>
+  <h2>Novosti u verziji 0.9.5</h2>
 
   <div class="box">
     <p>
-      Verzija <span class="highlight">0.9.4</span> dodatno unapređuje sistem kontrole
-      kvaliteta i smanjuje rizik od tehničkih grešaka u završnom PDF izveštaju.
+      Verzija <span class="highlight">0.9.5</span> donosi bezbedniji Fit to A4 workflow
+      i dodatnu proveru ulaznih PDF obrazaca pre kreiranja Priloga.
     </p>
 
     <ul>
-      <li>FINAL PDF QC sada prepoznaje rotirane strane</li>
-      <li>dodata automatska ispravka rotacije bez izmene originalnog PDF-a</li>
-      <li>poboljšana detekcija praznih i skoro praznih strana</li>
-      <li>Word QC sada prepoznaje tekstualne formate datuma, npr. „29. jun 2026”</li>
-      <li>unapređen QC workflow pre predaje izveštaja APR-u</li>
+      <li>Fit to A4 sada bolje čuva vizuelnu orijentaciju PDF strana</li>
+      <li>strane sa PDF rotation metadata obrađuju se bezbednije kako ne bi bile pogrešno okrenute</li>
+      <li>smanjen je rizik da APR obrasci budu rotirani tokom A4 normalizacije</li>
+      <li>dodata je preflight provera ulaznih obrazaca na moguće prazne strane</li>
+      <li>Čarobnjak upozorava korisnika pre kreiranja Priloga ako ulazni PDF sadrži prazne strane</li>
     </ul>
 
     <p class="note">
-      Fokus ove verzije je veća sigurnost u završnoj fazi revizorske sezone,
-      posebno kod velikog broja izveštaja i kratkih rokova.
+      Fokus ove verzije je sigurniji rad sa APR obrascima i ranije otkrivanje tehničkih problema
+      pre kreiranja FINAL PDF dokumenta.
     </p>
   </div>
 
@@ -405,9 +407,10 @@ kontrola kvaliteta (FINAL PDF QC) pre slanja, štampe ili digitalnog potpisivanj
 
   <div class="box">
     <p>
-      Aktuelna verzija je <span class="highlight">0.9.4</span>.
-      Najnovije izdanje donosi detekciju rotiranih strana, automatsku ispravku
-      rotacije i bolju QC proveru FINAL PDF dokumenta.
+      Aktuelna verzija je <span class="highlight">0.9.5</span>.
+      Najnovije izdanje donosi bezbedniji Fit to A4 za APR obrasce,
+      bolje čuvanje vizuelne orijentacije PDF strana i preflight proveru
+      ulaznih obrazaca na moguće prazne strane.
     </p>
 
     <p>
