@@ -1,25 +1,23 @@
 {
-  "version": "0.9.4",
+  "version": "0.9.5",
   "release_date": "2026-06-29",
   "minimum_version": "0.8.0",
 
-  "download_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.9.4/ARPy_Setup_0.9.4.exe",
-  "installer_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.9.4/ARPy_Setup_0.9.4.exe",
-  "installer_filename": "ARPy_Setup_0.9.4.exe",
+  "download_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.9.5/ARPy_Setup_0.9.5.exe",
+  "installer_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.9.5/ARPy_Setup_0.9.5.exe",
+  "installer_filename": "ARPy_Setup_0.9.5.exe",
 
   "release_notes_url": "https://keymaster75.github.io/arpy-documentation/release-notes.html",
   "notes_url": "https://keymaster75.github.io/arpy-documentation/release-notes.html",
 
   "mandatory": false,
 
-  "release_notes": "FINAL PDF QC sada prepoznaje rotirane strane.\nDodata automatska ispravka rotacije PDF stranica.\nPoboljšana detekcija praznih i skoro praznih strana.\nWord QC sada prepoznaje tekstualne formate datuma.\nUnapređen Quality Control workflow.",
+  "release_notes": "Fit to A4 sada bezbednije čuva vizuelnu orijentaciju PDF strana.\nDodata preflight provera ulaznih obrazaca na moguće prazne strane.\nSmanjen rizik da APR obrasci budu nenamerno okrenuti tokom A4 normalizacije.\nPoboljšan QC workflow za završnu proveru FINAL PDF-a.",
 
   "notes": [
-    "FINAL PDF QC sada prepoznaje rotirane strane.",
-    "Dodata automatska ispravka rotacije PDF stranica.",
-    "Poboljšana detekcija praznih i skoro praznih strana.",
-    "Word QC sada prepoznaje tekstualne formate datuma.",
-    "Unapređen Quality Control workflow.",
-    "Brojna poboljšanja stabilnosti i pouzdanosti aplikacije."
+    "Fit to A4 sada bezbednije čuva vizuelnu orijentaciju PDF strana.",
+    "Dodata preflight provera ulaznih obrazaca na moguće prazne strane.",
+    "Smanjen rizik da APR obrasci budu nenamerno okrenuti tokom A4 normalizacije.",
+    "Poboljšan QC workflow za završnu proveru FINAL PDF-a."
   ]
 }
