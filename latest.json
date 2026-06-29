@@ -1,23 +1,6 @@
 {
-  "version": "0.9.5",
-  "release_date": "2026-06-29",
-  "minimum_version": "0.8.0",
-
-  "download_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.9.5/ARPy_Setup_0.9.5.exe",
-  "installer_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.9.5/ARPy_Setup_0.9.5.exe",
-  "installer_filename": "ARPy_Setup_0.9.5.exe",
-
-  "release_notes_url": "https://keymaster75.github.io/arpy-documentation/release-notes.html",
-  "notes_url": "https://keymaster75.github.io/arpy-documentation/release-notes.html",
-
-  "mandatory": false,
-
-  "release_notes": "Fit to A4 sada bezbednije čuva vizuelnu orijentaciju PDF strana.\nDodata preflight provera ulaznih obrazaca na moguće prazne strane.\nSmanjen rizik da APR obrasci budu nenamerno okrenuti tokom A4 normalizacije.\nPoboljšan QC workflow za završnu proveru FINAL PDF-a.",
-
-  "notes": [
-    "Fit to A4 sada bezbednije čuva vizuelnu orijentaciju PDF strana.",
-    "Dodata preflight provera ulaznih obrazaca na moguće prazne strane.",
-    "Smanjen rizik da APR obrasci budu nenamerno okrenuti tokom A4 normalizacije.",
-    "Poboljšan QC workflow za završnu proveru FINAL PDF-a."
-  ]
+  "version": "0.9.6",
+  "download_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.9.6/ARPy_Setup_0.9.6.exe",
+  "release_notes": "https://keymaster75.github.io/arpy-documentation/release-notes.html",
+  "min_version": "0.9.0"
 }
