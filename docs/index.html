@@ -23,7 +23,7 @@
       <a href="#kontakt" class="cta">Zatraži demo</a>
 
       <div class="badge-row">
-       <span class="badge">Aktuelna verzija: 0.9.3</span>
+        <span class="badge">Aktuelna verzija: 0.9.4</span>
         <span class="badge">Selective PDF rasterization</span>
         <span class="badge">Wizard safety checks</span>
         <span class="badge">First Run setup</span>
@@ -41,6 +41,7 @@
         <span class="badge">FINAL PDF QC</span>
         <span class="badge">Persistent Wizard Settings</span>
         <span class="badge">Temporary PDF Archive</span>
+        <span class="badge">Rotation Fix</span>
         <span class="badge">Auto update workflow</span>
       </div>
     </div>
@@ -378,48 +379,35 @@ kontrola kvaliteta (FINAL PDF QC) pre slanja, štampe ili digitalnog potpisivanj
 
 
 
-  <h2>Novosti u verziji 0.9.3</h2>
+  <h2>Novosti u verziji 0.9.4</h2>
 
-<div class="box">
+  <div class="box">
+    <p>
+      Verzija <span class="highlight">0.9.4</span> dodatno unapređuje sistem kontrole
+      kvaliteta i smanjuje rizik od tehničkih grešaka u završnom PDF izveštaju.
+    </p>
 
-<p>
-Verzija <span class="highlight">0.9.3</span> unapređuje organizaciju izlaznih
-dokumenata i omogućava bezbedno arhiviranje pomoćnih PDF fajlova nakon
-uspešnog kreiranja FINAL PDF-a.
-</p>
+    <ul>
+      <li>FINAL PDF QC sada prepoznaje rotirane strane</li>
+      <li>dodata automatska ispravka rotacije bez izmene originalnog PDF-a</li>
+      <li>poboljšana detekcija praznih i skoro praznih strana</li>
+      <li>Word QC sada prepoznaje tekstualne formate datuma, npr. „29. jun 2026”</li>
+      <li>unapređen QC workflow pre predaje izveštaja APR-u</li>
+    </ul>
 
-<ul>
-
-<li>dodata opcija za automatsko arhiviranje pomoćnih PDF fajlova</li>
-
-<li>privremeni PDF fajlovi se premeštaju u podfolder <strong>_arpy_temp</strong></li>
-
-<li>FINAL, Mišljenje, Pismo i Prilozi ostaju u glavnom output folderu</li>
-
-<li>izlazni folder ostaje pregledniji tokom rada</li>
-
-<li>poboljšano čuvanje korisničkih podešavanja</li>
-
-<li>arhiviranje je potpuno opciono i može se uključiti ili isključiti u Settings</li>
-
-</ul>
-
-<p class="note">
-
-Pomoćni PDF fajlovi se više ne moraju ručno uklanjati, a istovremeno ostaju
-dostupni za eventualnu analizu ili rešavanje problema.
-
-</p>
-
-</div>
+    <p class="note">
+      Fokus ove verzije je veća sigurnost u završnoj fazi revizorske sezone,
+      posebno kod velikog broja izveštaja i kratkih rokova.
+    </p>
+  </div>
 
   <h2>Novosti</h2>
 
   <div class="box">
     <p>
-      Aktuelna verzija je <span class="highlight">0.9.3</span>.
-      Najnovije izdanje donosi opciono arhiviranje pomoćnih PDF fajlova
-      u podfolder <strong>_arpy_temp</strong>.
+      Aktuelna verzija je <span class="highlight">0.9.4</span>.
+      Najnovije izdanje donosi detekciju rotiranih strana, automatsku ispravku
+      rotacije i bolju QC proveru FINAL PDF dokumenta.
     </p>
 
     <p>

@@ -1,8 +1,16 @@
 {
-  "version": "0.9.3",
-  "download_url": "https://github.com/keymaster75/arpy-documentation/releases/latest",
-  "installer_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.9.3/ARPy_Setup_0.9.3.exe",
-  "installer_filename": "ARPy_Setup_0.9.3.exe",
-  "notes_url": "https://github.com/keymaster75/arpy-documentation/releases/latest",
-  "release_notes": "- Added optional archiving of temporary/intermediate PDF files after successful FINAL generation\n- Temporary PDFs are moved to _arpy_temp instead of being deleted\n- Added Settings option for temporary PDF archiving\n- Improved output folder organization after FINAL PDF generation"
+  "version": "0.9.4",
+  "release_date": "2026-06-29",
+  "minimum_version": "0.8.0",
+  "download_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.9.4/ARPy_Setup_0.9.4.exe",
+  "release_notes_url": "https://keymaster75.github.io/arpy-documentation/release-notes.html",
+  "mandatory": false,
+  "notes": [
+    "FINAL PDF QC sada prepoznaje rotirane strane.",
+    "Dodata automatska ispravka rotacije PDF stranica.",
+    "Poboljšana detekcija praznih i skoro praznih strana.",
+    "Word QC sada prepoznaje i tekstualne formate datuma.",
+    "Unapređen Quality Control workflow.",
+    "Brojna poboljšanja stabilnosti i pouzdanosti aplikacije."
+  ]
 }
