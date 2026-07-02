@@ -1,16 +1,16 @@
 {
-  "version": "0.9.7",
-  "release_date": "2026-07-01",
+  "version": "0.9.8",
+  "release_date": "2026-07-02",
   "minimum_version": "0.9.0",
 
-  "download_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.9.7/ARPy_Setup_0.9.7.exe",
-  "installer_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.9.7/ARPy_Setup_0.9.7.exe",
-  "installer_filename": "ARPy_Setup_0.9.7.exe",
+  "download_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.9.8/ARPy_Setup_0.9.8.exe",
+  "installer_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.9.8/ARPy_Setup_0.9.8.exe",
+  "installer_filename": "ARPy_Setup_0.9.8.exe",
 
   "release_notes_url": "https://keymaster75.github.io/arpy-documentation/release-notes.html",
   "notes_url": "https://keymaster75.github.io/arpy-documentation/release-notes.html",
 
   "mandatory": false,
 
-  "release_notes": "ARPy 0.9.7 donosi stabilniju sinhronizaciju između Brzog unosa, Čarobnjaka i Word alata, pouzdaniji TOC, podršku za tekstualne datume u Word QC i dodatna unapređenja workflow-a tokom revizorske sezone."
+  "release_notes": "ARPy 0.9.8 donosi stabilniju obradu memoranduma u Word dokumentima. Standardni način umetanja memoranduma ostaje podrazumevan za redovne dokumente, dok se za problematične Word dokumente automatski koristi SeekView fallback strategija. Unapređena je i pretraga anchor teksta za pozicioniranje potpisa u PDF-u."
 }
