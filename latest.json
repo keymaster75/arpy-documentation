@@ -12,5 +12,5 @@
 
   "mandatory": false,
 
-  "release_notes": "ARPy 0.9.8 donosi stabilniju obradu memoranduma u Word dokumentima. Standardni način umetanja memoranduma ostaje podrazumevan za redovne dokumente, dok se za problematične Word dokumente automatski koristi SeekView fallback strategija. Unapređena je i pretraga anchor teksta za pozicioniranje potpisa u PDF-u."
+  "release_notes": "Verzija ARPy 0.9.8 donosi stabilniju obradu memoranduma u Word dokumentima. Standardni način umetanja memoranduma ostaje podrazumevan za redovne dokumente, dok se za problematične Word dokumente automatski koristi SeekView fallback strategija. Unapređena je i pretraga anchor teksta za pozicioniranje potpisa u PDF-u."
 }
