@@ -23,7 +23,7 @@
       <a href="#kontakt" class="cta">Zatraži demo</a>
 
       <div class="badge-row">
-        <span class="badge">Aktuelna verzija: 0.9.7</span>
+        <span class="badge">Aktuelna verzija: 0.9.8</span>
         <span class="badge">Selective PDF rasterization</span>
         <span class="badge">Wizard safety checks</span>
         <span class="badge">First Run setup</span>
@@ -48,6 +48,9 @@
         <span class="badge">Corrected RFI QC</span>
           <span class="badge">Workflow synchronization</span>
           <span class="badge">Text date QC</span>
+        <span class="badge">Adaptive Memorandum</span>
+        <span class="badge">Word COM Fallback</span>
+        <span class="badge">Improved Signature Anchor</span>
         <span class="badge">Auto update workflow</span>
       </div>
     </div>
@@ -385,33 +388,35 @@ kontrola kvaliteta (FINAL PDF QC) pre slanja, štampe ili digitalnog potpisivanj
 
 
 
-  <h2>Novosti u verziji 0.9.7</h2>
+  <h2>Novosti u verziji 0.9.8</h2>
 
   <div class="box">
+
     <p>
-        Verzija 0.9.7 donosi dodatnu stabilizaciju kompletnog workflow-a između Brzog unosa, Čarobnjaka i Word alata, unapređen Word QC i pouzdaniji rad tokom završnice revizorske sezone.
+      Verzija 0.9.8 donosi značajno unapređenje pouzdanosti Word automatizacije
+      i stabilniji rad memoranduma na različitim tipovima Word dokumenata.
     </p>
 
-      <ul>
-          <li>pouzdanija sinhronizacija Brzi unos → Čarobnjak → Word alati</li>
-          <li>TOC sada dosledno koristi izabranu vrstu izveštaja</li>
-          <li>Word QC podržava i tekstualne datume (npr. 01. jul 2026.)</li>
-          <li>poboljšan QC dijalog</li>
-          <li>osvežavanje podrazumevanih štampača u Batch Print modulu</li>
-          <li>zadržana stabilna obrada memoranduma iz verzije 0.9.5</li>
-      </ul>
+    <ul>
+      <li>adaptivna obrada memoranduma sa automatskim izborom najbolje Word COM strategije</li>
+      <li>zadržan standardni memorandum workflow za postojeće revizorske kuće</li>
+      <li>automatski SeekView fallback za problematične Word dokumente</li>
+      <li>poboljšana pretraga tekstualnog anchor-a za automatsko pozicioniranje potpisa</li>
+      <li>čišći memorandum workflow i jednostavniji dijagnostički logovi</li>
+    </ul>
 
     <p class="note">
-      Fokus ove verzije je podrška za korigovane finansijske izveštaje uz očuvanje stabilnog
-      workflow-a tokom završnice revizorske sezone.
+      Fokus verzije 0.9.8 bio je na maksimalnoj kompatibilnosti sa različitim
+      Word dokumentima bez narušavanja kvaliteta PDF teksta ili memoranduma.
     </p>
+
   </div>
 
   <h2>Novosti</h2>
 
   <div class="box">
     <p>
-      Aktuelna verzija je <span class="highlight">0.9.7</span>.
+      Aktuelna verzija je <span class="highlight">0.9.8</span>.
     </p>
 
     <p>
