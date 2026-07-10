@@ -1,0 +1,12 @@
+{
+  "version": "0.9.9",
+  "release_date": "2026-07-10",
+  "minimum_version": "0.9.0",
+  "download_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.9.9/ARPy_Setup_0.9.9.exe",
+  "installer_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.9.9/ARPy_Setup_0.9.9.exe",
+  "installer_filename": "ARPy_Setup_0.9.9.exe",
+  "release_notes_url": "https://keymaster75.github.io/arpy-documentation/release-notes.html",
+  "notes_url": "https://keymaster75.github.io/arpy-documentation/release-notes.html",
+  "mandatory": false,
+  "release_notes": "Verzija ARPy 0.9.9 donosi završno poliranje Wizard toka: povezane su akcione dugmadi u vodiču, dodat je pregled spremnosti u završnom koraku, unapređena je validacija sadržaja i uvedene su zaštite od pogrešnog spajanja PDF fajlova i dupliranja priloga. Wizard sada ima posebne ilustracije po koracima, a Word alati stabilnije preuzimaju podatke iz Wizard-a bez neželjenog prepisivanja osnovnih podataka."
+}

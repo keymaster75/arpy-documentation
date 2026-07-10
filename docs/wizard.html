@@ -55,18 +55,29 @@
                 Korisnik može preći na tab Mišljenje revizora ili Word alate.
             </p>
             <p class="note">
-                Preporučeno je proveriti Word QC pre izvoza mišljenja u PDF.
+                Sadržaj se ne računa dok nije uneta strana ili izabran PDF mišljenja, čime se smanjuje rizik od pogrešnog TOC-a.
             </p>
         </div>
 
         <div class="process-card">
             <h3>4. Prilozi i FINAL</h3>
             <p>
-                Kreira se Prilozi PDF, zatim FINAL PDF izveštaj. Po potrebi se pokreće
-                analiza PDF-a, FINAL QC, NACRT watermark ili dodatna obrada.
+                Kreira se Prilozi PDF, zatim FINAL PDF izveštaj. ARPy proverava da PDF mišljenja
+                i Prilozi PDF nisu isti fajl i kontroliše očekivan broj strana nakon spajanja.
             </p>
             <p class="note">
-                FINAL QC je preporučena završna provera pre slanja, štampe ili potpisivanja.
+                Ove zaštite smanjuju rizik od dupliranja priloga ili pogrešno sastavljenog FINAL PDF-a.
+            </p>
+        </div>
+
+        <div class="process-card">
+            <h3>5. Završni pregled</h3>
+            <p>
+                Završni korak prikazuje spremnost izveštaja, broj strana, status PDF mišljenja,
+                Prilozi PDF-a, FINAL PDF-a i output foldera.
+            </p>
+            <p class="note">
+                Iz ovog koraka mogu se otvoriti FINAL PDF, output folder, FINAL QC i kopirati putanja finalnog fajla.
             </p>
         </div>
 
@@ -83,6 +94,7 @@
             <li>Izračunati sadržaj.</li>
             <li>Kreirati Prilozi PDF.</li>
             <li>Kreirati FINAL PDF.</li>
+            <li>Proveriti Korak 5 — završni pregled spremnosti.</li>
             <li>Pokrenuti FINAL PDF QC.</li>
             <li>Po potrebi otvoriti, sačuvati ili kopirati QC izveštaj.</li>
         </ol>
@@ -91,6 +103,28 @@
     <h2>Korisne opcije u Čarobnjaku</h2>
 
     <div class="features">
+
+        <div class="feature">
+            <strong>Akciona dugmad vodiča</strong>
+            <p>
+                Vodič u Čarobnjaku sada nudi sledeću konkretnu akciju: izračun sadržaja,
+                čuvanje TXT sadržaja, prelazak na Word alate, izbor PDF mišljenja ili kreiranje FINAL PDF-a.
+            </p>
+            <p class="note">
+                Korisnik ne mora da pamti gde je sledeći korak — Čarobnjak predlaže akciju u kontekstu.
+            </p>
+        </div>
+
+        <div class="feature">
+            <strong>Završni pregled spremnosti</strong>
+            <p>
+                Korak 5 prikazuje status ključnih elemenata izveštaja i nudi brze komande
+                za FINAL PDF, FINAL QC, output folder i kopiranje putanje.
+            </p>
+            <p class="note">
+                Namenjeno kao poslednja kontrolna tačka pre slanja, štampe ili potpisivanja.
+            </p>
+        </div>
 
         <div class="feature">
             <strong>Auto redosled</strong>
@@ -177,6 +211,9 @@ Prilozi PDF
 FINAL PDF
       │
       ▼
+Završni pregled
+      │
+      ▼
 FINAL PDF QC
       │
       ▼
@@ -191,6 +228,7 @@ Isporuka / štampa / potpisivanje
             <li>Koristiti Čarobnjak kao podrazumevani način rada.</li>
             <li>Uključiti Auto redosled ako se obrasci dodaju odjednom.</li>
             <li>Pokrenuti Word QC pre izvoza mišljenja u PDF.</li>
+            <li>Proveriti završni pregled u Koraku 5 pre slanja ili digitalnog potpisivanja.</li>
             <li>Pokrenuti FINAL QC pre slanja ili digitalnog potpisivanja.</li>
             <li>Kod većih PDF fajlova prvo probati standardnu optimizaciju, pa tek onda Strict kompresiju.</li>
             <li>Ako FINAL QC prijavi da dokument nije A4, uključiti Fit A4 ili Forsiraj Fit A4 i ponoviti kreiranje FINAL PDF-a.</li>
