@@ -206,52 +206,72 @@
 
     <div class="screens">
         <div>
-            <img src="screenshots/0.9.9-wizard/01_wizard_step1_basic_data.png" alt="ARPy Čarobnjak — Korak 1, osnovni podaci">
+            <a href="screenshots/0.9.9-wizard/01_wizard_step1_basic_data.png" class="screenshot-link" data-lightbox>
+                <img src="screenshots/0.9.9-wizard/01_wizard_step1_basic_data.png" alt="ARPy Čarobnjak — Korak 1, osnovni podaci">
+            </a>
             <p class="note">Korak 1 — unos osnovnih podataka, godine i output foldera.</p>
         </div>
 
         <div>
-            <img src="screenshots/0.9.9-wizard/02_wizard_step2_forms_added.png" alt="ARPy Čarobnjak — Korak 2, dodati obrasci">
+            <a href="screenshots/0.9.9-wizard/02_wizard_step2_forms_added.png" class="screenshot-link" data-lightbox>
+                <img src="screenshots/0.9.9-wizard/02_wizard_step2_forms_added.png" alt="ARPy Čarobnjak — Korak 2, dodati obrasci">
+            </a>
             <p class="note">Korak 2 — dodavanje finansijskih obrazaca i priloga.</p>
         </div>
 
         <div>
-            <img src="screenshots/0.9.9-wizard/03_wizard_step3_toc_ready.png" alt="ARPy Čarobnjak — Korak 3, sadržaj spreman">
+            <a href="screenshots/0.9.9-wizard/03_wizard_step3_toc_ready.png" class="screenshot-link" data-lightbox>
+                <img src="screenshots/0.9.9-wizard/03_wizard_step3_toc_ready.png" alt="ARPy Čarobnjak — Korak 3, sadržaj spreman">
+            </a>
             <p class="note">Korak 3 — izračun tehničkog sadržaja izveštaja.</p>
         </div>
 
         <div>
-            <img src="screenshots/0.9.9-wizard/04_word_tools_insert_toc.png" alt="ARPy Word alati — ubacivanje sadržaja">
+            <a href="screenshots/0.9.9-wizard/04_word_tools_insert_toc.png" class="screenshot-link" data-lightbox>
+                <img src="screenshots/0.9.9-wizard/04_word_tools_insert_toc.png" alt="ARPy Word alati — ubacivanje sadržaja">
+            </a>
             <p class="note">Word alati — ubacivanje sadržaja u Word dokument.</p>
         </div>
 
         <div>
-            <img src="screenshots/0.9.9-wizard/05_wizard_step3_opinion_pdf_selected.png" alt="ARPy Čarobnjak — PDF mišljenja izabran">
+            <a href="screenshots/0.9.9-wizard/05_wizard_step3_opinion_pdf_selected.png" class="screenshot-link" data-lightbox>
+                <img src="screenshots/0.9.9-wizard/05_wizard_step3_opinion_pdf_selected.png" alt="ARPy Čarobnjak — PDF mišljenja izabran">
+            </a>
             <p class="note">Korak 3 — povezivanje PDF mišljenja sa Čarobnjakom.</p>
         </div>
 
         <div>
-            <img src="screenshots/0.9.9-wizard/06_wizard_step4_prilozi_ready.png" alt="ARPy Čarobnjak — Prilozi PDF kreiran">
+            <a href="screenshots/0.9.9-wizard/06_wizard_step4_prilozi_ready.png" class="screenshot-link" data-lightbox>
+                <img src="screenshots/0.9.9-wizard/06_wizard_step4_prilozi_ready.png" alt="ARPy Čarobnjak — Prilozi PDF kreiran">
+            </a>
             <p class="note">Korak 4 — kreiran Prilozi PDF.</p>
         </div>
 
         <div>
-            <img src="screenshots/0.9.9-wizard/07_wizard_step4_final_ready.png" alt="ARPy Čarobnjak — FINAL PDF kreiran">
+            <a href="screenshots/0.9.9-wizard/07_wizard_step4_final_ready.png" class="screenshot-link" data-lightbox>
+                <img src="screenshots/0.9.9-wizard/07_wizard_step4_final_ready.png" alt="ARPy Čarobnjak — FINAL PDF kreiran">
+            </a>
             <p class="note">Korak 4 — kreiran FINAL PDF sa kontrolom očekivanog broja strana.</p>
         </div>
 
         <div>
-            <img src="screenshots/0.9.9-wizard/08_wizard_step5_review_ready.png" alt="ARPy Čarobnjak — završni pregled spremnosti">
+            <a href="screenshots/0.9.9-wizard/08_wizard_step5_review_ready.png" class="screenshot-link" data-lightbox>
+                <img src="screenshots/0.9.9-wizard/08_wizard_step5_review_ready.png" alt="ARPy Čarobnjak — završni pregled spremnosti">
+            </a>
             <p class="note">Korak 5 — završni pregled spremnosti izveštaja.</p>
         </div>
 
         <div>
-            <img src="screenshots/0.9.9-wizard/09_final_pdf_qc.png" alt="ARPy FINAL PDF QC izveštaj">
+            <a href="screenshots/0.9.9-wizard/09_final_pdf_qc.png" class="screenshot-link" data-lightbox>
+                <img src="screenshots/0.9.9-wizard/09_final_pdf_qc.png" alt="ARPy FINAL PDF QC izveštaj">
+            </a>
             <p class="note">FINAL PDF QC — završna tehnička provera dokumenta.</p>
         </div>
 
         <div>
-            <img src="screenshots/0.9.9-wizard/10_output_folder_result.png" alt="ARPy output folder sa rezultatom">
+            <a href="screenshots/0.9.9-wizard/10_output_folder_result.png" class="screenshot-link" data-lightbox>
+                <img src="screenshots/0.9.9-wizard/10_output_folder_result.png" alt="ARPy output folder sa rezultatom">
+            </a>
             <p class="note">Output folder — generisani fajlovi i završni rezultat.</p>
         </div>
     </div>
@@ -308,5 +328,48 @@ Isporuka / štampa / potpisivanje
     </div>
 
 </div>
+
+<div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightbox-close">&times;</span>
+    <img src="" alt="" id="lightbox-img">
+</div>
+
+<script>
+    document.querySelectorAll("[data-lightbox]").forEach(function(link) {
+        link.addEventListener("click", function(event) {
+            event.preventDefault();
+
+            const lightbox = document.getElementById("lightbox");
+            const lightboxImg = document.getElementById("lightbox-img");
+
+            lightboxImg.src = this.href;
+            lightboxImg.alt = this.querySelector("img")?.alt || "";
+            lightbox.classList.add("active");
+        });
+    });
+
+    function closeLightbox() {
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+
+        lightbox.classList.remove("active");
+        lightboxImg.src = "";
+    }
+
+    document.getElementById("lightbox-close").addEventListener("click", closeLightbox);
+
+    document.getElementById("lightbox").addEventListener("click", function(event) {
+        if (event.target === this) {
+            closeLightbox();
+        }
+    });
+
+    document.addEventListener("keydown", function(event) {
+        if (event.key === "Escape") {
+            closeLightbox();
+        }
+    });
+</script>
+
 </body>
 </html>
