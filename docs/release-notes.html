@@ -15,7 +15,45 @@
 
 <h2>Kratka istorija novijih verzija</h2>
 
-    Aktuelna verzija je 0.9.8
+    Aktuelna verzija je 0.9.9
+
+    <h2>Verzija 0.9.9 (10.07.2026)</h2>
+
+    <p>
+        Verzija 0.9.9 donosi završno poliranje Čarobnjaka i sigurniji workflow za
+        pripremu kompletnog revizorskog izveštaja — od osnovnih podataka do FINAL PDF-a.
+    </p>
+
+    <h3>Nova funkcionalnost</h3>
+    <ul>
+        <li>Dodate su posebne ilustracije za svih pet koraka Čarobnjaka.</li>
+        <li>Povezane su akcije iz vodiča sa konkretnim funkcijama aplikacije.</li>
+        <li>Dodat je završni pregled spremnosti u Koraku 5.</li>
+        <li>Dodate su komande za otvaranje FINAL PDF-a, otvaranje output foldera i kopiranje putanje finalnog fajla.</li>
+        <li>FINAL PDF sada proverava očekivan zbir strana nakon kreiranja.</li>
+    </ul>
+
+    <h3>Poboljšanja</h3>
+    <ul>
+        <li>Unapređen je tok rada kroz Čarobnjak, posebno prelazak između sadržaja, PDF mišljenja, priloga i finalnog dokumenta.</li>
+        <li>Unapređena je validacija pre izračuna sadržaja, da se TOC ne računa bez potrebne strane ili PDF mišljenja.</li>
+        <li>Word alati stabilnije preuzimaju podatke iz Čarobnjaka bez neželjenog prepisivanja osnovnih podataka.</li>
+        <li>Završni pregled jasnije prikazuje status PDF mišljenja, Priloga PDF, FINAL PDF-a i output foldera.</li>
+        <li>Dodati su screenshotovi Wizard toka za dokumentaciju verzije 0.9.9.</li>
+    </ul>
+
+    <h3>Ispravljeno</h3>
+    <ul>
+        <li>Sprečeno je pogrešno biranje Priloga PDF kao PDF mišljenja kroz akcione komande vodiča.</li>
+        <li>Sprečeno je kreiranje FINAL PDF-a kada su PDF mišljenja i Prilozi PDF isti fajl.</li>
+        <li>Smanjen je rizik od dupliranja priloga u FINAL PDF-u.</li>
+        <li>Dodate su dodatne provere broja strana tokom i nakon spajanja PDF dokumenata.</li>
+    </ul>
+
+    <p class="note">
+        Verzija nije obavezna nadogradnja, ali se preporučuje korisnicima koji koriste
+        Čarobnjak kao glavni način pripreme izveštaja.
+    </p>
 
     <h2>Verzija 0.9.8 (02.07.2026)</h2>
 
@@ -114,6 +152,7 @@
 
 <div class="box">
     <ul>
+        <li><strong>0.9.9</strong> — poliran Čarobnjak workflow, dodate ilustracije po koracima, završni pregled spremnosti, akcioni vodič i zaštite od dupliranja priloga u FINAL PDF-u.</li>
         <li><strong>0.9.5</strong> — bezbedniji Fit to A4 za PDF strane sa rotation metadata, sprečeno nenamerno okretanje APR obrazaca i dodata preflight provera ulaznih obrazaca na moguće prazne strane.</li>
         <li><strong>0.9.3</strong> — opciono arhiviranje pomoćnih PDF fajlova u podfolder <strong>_arpy_temp</strong>, uredniji output folder i unapređeno čuvanje korisničkih podešavanja.</li>
         <li><strong>0.9.2</strong> — uveden FINAL PDF QC, završna kontrola kvaliteta FINAL PDF dokumenta, Auto redosled obrazaca kao podrazumevana opcija i pamćenje korisničkih podešavanja Čarobnjaka.</li>
