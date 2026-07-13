@@ -15,7 +15,38 @@
 
 <h2>Kratka istorija novijih verzija</h2>
 
-    Aktuelna verzija je 0.9.9
+    Aktuelna verzija je 0.9.10
+
+
+    <h2>Verzija 0.9.10 (13.07.2026)</h2>
+
+    <p>
+        Verzija 0.9.10 donosi UX i help polish za napredne delove aplikacije,
+        uz usklađivanje PDF pripreme sa Strict kompresijom iz Wizard workflow-a.
+    </p>
+
+    <h3>Nova funkcionalnost</h3>
+    <ul>
+        <li>PDF priprema dobija Strict Compress režim sa Low, Medium i High opcijama.</li>
+        <li>Strict Compress u PDF pripremi koristi ista podešavanja kao Wizard: maksimalnu veličinu PDF-a, DPI i JPEG kvalitet.</li>
+        <li>Batch Print, Split štampa, PDF priprema, Podešavanja i Word alati dobijaju dodatnu pomoć i tooltipove.</li>
+        <li>Help sadržaj i tooltipovi prošireni su kroz zajednički modul <code>help_content.py</code>.</li>
+    </ul>
+
+    <h3>Poboljšanja</h3>
+    <ul>
+        <li>Split štampa sada čisti formu nakon dodavanja posla u red.</li>
+        <li>Dodato je ručno dugme za čišćenje forme u Batch Print i Split delu.</li>
+        <li>PDF priprema jasnije objašnjava razliku između Compress, Smart Compress i Strict Compress režima.</li>
+        <li>Podešavanja dobijaju dodatna objašnjenja za PDF kompresione profile.</li>
+        <li>Word alati su prebačeni na zajednički tooltip/help pristup.</li>
+    </ul>
+
+    <h3>Napomena</h3>
+    <p>
+        Verzija nije obavezna nadogradnja, ali se preporučuje korisnicima koji koriste
+        Batch Print, Split štampu, PDF pripremu i napredne alate.
+    </p>
 
     <h2>Verzija 0.9.9 (10.07.2026)</h2>
 
@@ -152,6 +183,7 @@
 
 <div class="box">
     <ul>
+        <li><strong>0.9.10</strong> — proširena pomoć i tooltipovi za napredne alate, Split štampa čisti formu nakon dodavanja u red, a PDF priprema dobija Strict Compress usklađen sa Wizard podešavanjima.</li>
         <li><strong>0.9.9</strong> — poliran Čarobnjak workflow, dodate ilustracije po koracima, završni pregled spremnosti, akcioni vodič i zaštite od dupliranja priloga u FINAL PDF-u.</li>
         <li><strong>0.9.5</strong> — bezbedniji Fit to A4 za PDF strane sa rotation metadata, sprečeno nenamerno okretanje APR obrazaca i dodata preflight provera ulaznih obrazaca na moguće prazne strane.</li>
         <li><strong>0.9.3</strong> — opciono arhiviranje pomoćnih PDF fajlova u podfolder <strong>_arpy_temp</strong>, uredniji output folder i unapređeno čuvanje korisničkih podešavanja.</li>

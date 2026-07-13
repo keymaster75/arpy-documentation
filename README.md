@@ -1,6 +1,6 @@
 # ARPy – alat za bržu pripremu revizorskih PDF izveštaja
 
-![Version](https://img.shields.io/badge/version-0.9.9-blue)
+![Version](https://img.shields.io/badge/version-0.9.10-blue)
 ![Platform](https://img.shields.io/badge/platform-Windows-blue)
 ![Python](https://img.shields.io/badge/Python-3.12-yellow)
 ![Status](https://img.shields.io/badge/status-Active-success)
@@ -28,6 +28,8 @@ Dokumentacioni repozitorijum sadrži GitHub Pages prezentaciju, release notes, s
 - 📂 Automatsko arhiviranje pomoćnih PDF fajlova
 - 📦 Automatska provera novih verzija i jednostavan update postupak
 - 🖼 Dokumentacioni screenshotovi i PDF vodič za rad kroz Wizard
+- 🧰 PDF priprema sa Strict Compress režimom
+- 🖨 Batch Print i Split štampa sa dodatnom pomoći
 
 ---
 
@@ -99,6 +101,45 @@ ARPy sadrži više mehanizama za smanjenje rizika od grešaka tokom pripreme izv
 - automatska provera A4 formata
 - detekcija formularskih polja
 - detekcija elektronskih potpisa
+
+---
+
+
+## 🆕 Najvažnije novosti u verziji 0.9.10
+
+Verzija **ARPy 0.9.10 — Help and PDF tools polish** fokusirana je na prijatniji rad u naprednim alatima, bolju pomoć u aplikaciji i usklađivanje PDF kompresije.
+
+### Help i tooltipovi
+
+- prošireni su help tekstovi i tooltipovi za Batch Print
+- dodata je pomoć za Split štampu
+- PDF priprema dobija dodatni help i tooltipove za glavne akcije
+- Podešavanja dobijaju objašnjenja za opšte opcije i PDF kompresiju
+- Word alati su prebačeni na zajednički tooltip/help pristup
+- help sadržaj je centralizovan u `help_content.py`
+
+### Batch Print i Split štampa
+
+- Split štampa sada čisti formu nakon dodavanja posla u red
+- dodato je ručno dugme za čišćenje forme
+- smanjen je rizik da prethodno uneti podaci zbune korisnika pri sledećem unosu
+
+### PDF priprema
+
+- dodat je Strict Compress režim u PDF pripremi
+- Strict Compress ima Low / Medium / High opcije
+- PDF priprema koristi ista podešavanja kao Wizard:
+  - `max_pdf_size_mb`
+  - `pdf_low_dpi` / `pdf_low_quality`
+  - `pdf_medium_dpi` / `pdf_medium_quality`
+  - `pdf_high_dpi` / `pdf_high_quality`
+
+### Dokumentacija
+
+- ažurirana početna GitHub Pages stranica za verziju 0.9.10
+- dopunjene Release Notes
+- ažuriran README dokumentacionog repozitorijuma
+- pripremljen `latest.json` za installer 0.9.10
 
 ---
 
@@ -218,10 +259,10 @@ Metadata uključuje:
 - kratke release notes
 - informaciju da li je nadogradnja obavezna
 
-Za verziju 0.9.9 koristi se installer:
+Za verziju 0.9.10 koristi se installer:
 
 ```text
-ARPy_Setup_0.9.9.exe
+ARPy_Setup_0.9.10.exe
 ```
 
 ---
