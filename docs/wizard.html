@@ -23,8 +23,9 @@
     </div>
 
     <p class="note">
-        Verzija 0.9.11 dodatno unapređuje pouzdanost Word workflow-a i kompatibilnost
-        sa različitim šablonima mišljenja, bez promene načina rada kroz Čarobnjak.
+        Verzija 0.9.12 dodatno unapređuje Guide workflow, lokalizaciju interfejsa i
+        kontekstualnu pomoć. Nakon izbora PDF mišljenja u Koraku 3 vodič pravilno
+        prelazi na sledeću akciju.
     </p>
 
     <div class="box">
@@ -103,9 +104,10 @@
         <ol>
             <li>Popuniti osnovne podatke i izabrati output folder.</li>
             <li>Dodati obrasce i proveriti njihov tip i redosled.</li>
+            <li>Uneti poslednju numerisanu stranu mišljenja i izračunati sadržaj.</li>
+            <li>Sačuvati sadržaj u TXT i ubaciti ga u Word kroz Word alate.</li>
             <li>Pripremiti mišljenje revizora i generisati PDF mišljenja.</li>
             <li>Izabrati PDF mišljenja u Čarobnjaku.</li>
-            <li>Izračunati sadržaj.</li>
             <li>Kreirati Prilozi PDF.</li>
             <li>Kreirati FINAL PDF.</li>
             <li>Proveriti Korak 5 — završni pregled spremnosti.</li>
@@ -126,6 +128,7 @@
             </p>
             <p class="note">
                 Korisnik ne mora da pamti gde je sledeći korak — Čarobnjak predlaže akciju u kontekstu.
+                U verziji 0.9.12 dodatno je ispravljeno napredovanje vodiča nakon izbora PDF mišljenja.
             </p>
         </div>
 
@@ -203,6 +206,21 @@
 
     </div>
 
+
+    <h2>Jezik i country profil</h2>
+
+    <div class="box">
+        <p>
+            Od verzije 0.9.12 jezik korisničkog interfejsa bira se nezavisno od
+            country/regulatornog profila. Dostupni su SR, HR i EN jezici, kao i
+            RS, HR i INT profili.
+        </p>
+        <p class="note">
+            NexU / APR funkcionalnost prikazuje se samo za RS country profil.
+            HR i INT u ovoj verziji predstavljaju internacionalizovan UI i arhitekturu profila,
+            bez potpune hrvatske regulatorne implementacije.
+        </p>
+    </div>
 
     <h2>Vizuelni primer workflow-a</h2>
 
