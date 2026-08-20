@@ -1,16 +1,28 @@
 # ARPy – alat za bržu pripremu revizorskih PDF izveštaja
 
-![Version](https://img.shields.io/badge/version-0.9.10-blue)
+![Version](https://img.shields.io/badge/version-0.9.12-blue)
 ![Platform](https://img.shields.io/badge/platform-Windows-blue)
 ![Python](https://img.shields.io/badge/Python-3.12-yellow)
 ![Status](https://img.shields.io/badge/status-Active-success)
 ![License](https://img.shields.io/badge/license-Commercial-red)
+![UI](https://img.shields.io/badge/UI-SR%20%7C%20HR%20%7C%20EN-6f42c1)
+![Profiles](https://img.shields.io/badge/profiles-RS%20%7C%20HR%20%7C%20INT-0a7ea4)
 
 **ARPy** je desktop aplikacija namenjena revizorskim društvima za automatizaciju tehničke pripreme završnih PDF izveštaja.
 
 Aplikacija pomaže u objedinjavanju Word i PDF dokumenata, dodavanju memoranduma, potpisa i pečata, obradi priloga, kontroli kvaliteta i generisanju finalnog dokumenta spremnog za predaju APR-u, klijentima i drugim institucijama.
 
 Dokumentacioni repozitorijum sadrži GitHub Pages prezentaciju, release notes, screenshotove, PDF vodiče i update metadata fajlove za proveru novih verzija iz aplikacije.
+
+### 🔗 Brzi linkovi
+
+- 🌐 [ARPy GitHub Pages](https://keymaster75.github.io/arpy-documentation/)
+- 🆕 [Release Notes](https://keymaster75.github.io/arpy-documentation/release-notes.html)
+- 🧙 [Wizard dokumentacija](https://keymaster75.github.io/arpy-documentation/wizard.html)
+- 🧩 [Funkcionalnosti](https://keymaster75.github.io/arpy-documentation/features.html)
+- 🖼️ [Screenshots](https://keymaster75.github.io/arpy-documentation/screenshots.html)
+- ✅ [Quality Control](https://keymaster75.github.io/arpy-documentation/qc.html)
+
 
 ---
 
@@ -105,6 +117,46 @@ ARPy sadrži više mehanizama za smanjenje rizika od grešaka tokom pripreme izv
 ---
 
 
+## 🆕 Najvažnije novosti u verziji 0.9.12
+
+Verzija **ARPy 0.9.12** donosi internacionalizovan UI i dodatno poliran vođeni workflow.
+
+### 🌐 Lokalizacija i country profili
+
+- srpski, hrvatski i engleski UI
+- nezavisni country/regulatorni profili **RS / HR / INT**
+- jezik i country profil mogu se kombinovati nezavisno
+- **NexU / APR** funkcionalnost ostaje dostupna samo za **RS** profil
+- promena jezika i regulatornog profila zahteva restart aplikacije
+
+### ❓ Lokalizovana pomoć
+
+- prošireni Help i tooltipovi za Wizard
+- Word Tools, PDF Preparation i Batch Print
+- Settings, Quick Fill i Signature Preview
+- pomoćni i QC dijalozi
+
+### 🧭 Wizard
+
+- ispravljeno napredovanje vodiča u Koraku 3 nakon izbora PDF mišljenja
+- stabilnije praćenje stvarnog stanja workflow-a
+- potvrđen end-to-end tok do FINAL PDF-a
+
+### ✅ Validacija
+
+Smoke test je prošao za kombinacije:
+
+- **SR / RS**
+- **HR / HR**
+- **EN / RS**
+- **EN / INT**
+
+Provereni su Wizard, PDF Preparation, Batch Print, Help, country gating, packaged build i installer.
+
+> **Napomena:** HR i INT profili u verziji 0.9.12 potvrđuju internacionalizovan UI i arhitekturu profila. Potpuna hrvatska regulatorna logika nije deo ove verzije.
+
+---
+
 ## 🆕 Najvažnije novosti u verziji 0.9.10
 
 Verzija **ARPy 0.9.10 — Help and PDF tools polish** fokusirana je na prijatniji rad u naprednim alatima, bolju pomoć u aplikaciji i usklađivanje PDF kompresije.
@@ -129,10 +181,10 @@ Verzija **ARPy 0.9.10 — Help and PDF tools polish** fokusirana je na prijatnij
 - dodat je Strict Compress režim u PDF pripremi
 - Strict Compress ima Low / Medium / High opcije
 - PDF priprema koristi ista podešavanja kao Wizard:
-  - `max_pdf_size_mb`
-  - `pdf_low_dpi` / `pdf_low_quality`
-  - `pdf_medium_dpi` / `pdf_medium_quality`
-  - `pdf_high_dpi` / `pdf_high_quality`
+   - `max_pdf_size_mb`
+   - `pdf_low_dpi` / `pdf_low_quality`
+   - `pdf_medium_dpi` / `pdf_medium_quality`
+   - `pdf_high_dpi` / `pdf_high_quality`
 
 ### Dokumentacija
 
@@ -259,10 +311,10 @@ Metadata uključuje:
 - kratke release notes
 - informaciju da li je nadogradnja obavezna
 
-Za verziju 0.9.10 koristi se installer:
+Za aktuelnu verziju 0.9.12 koristi se installer:
 
 ```text
-ARPy_Setup_0.9.10.exe
+ARPy_Setup_0.9.12.exe
 ```
 
 ---
@@ -281,7 +333,7 @@ Aplikacija je namenjena:
 
 ## 📌 Napomena
 
-Ovaj repozitorijum služi za prezentaciju aplikacije, dokumentaciju, screenshotove, PDF vodiče i distribuciju instalacionih paketa.
+Ovaj repozitorijum služi za javnu prezentaciju aplikacije, GitHub Pages dokumentaciju, screenshotove, PDF vodiče, release notes i distribuciju instalacionih paketa.
 
 Izvorni kod ARPy aplikacije nije javno dostupan.
 
