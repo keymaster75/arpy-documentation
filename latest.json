@@ -1,12 +1,11 @@
 {
-  "version": "0.9.11",
-  "release_date": "2026-07-17",
+  "version": "0.9.12",
+  "release_date": "2026-08-20",
   "minimum_version": "0.9.0",
-  "download_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.9.11/ARPy_Setup_0.9.11.exe",
-  "installer_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.9.11/ARPy_Setup_0.9.11.exe",
-  "installer_filename": "ARPy_Setup_0.9.11.exe",
+  "download_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.9.12/ARPy_Setup_0.9.12.exe",
+  "installer_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.9.12/ARPy_Setup_0.9.12.exe",
+  "installer_filename": "ARPy_Setup_0.9.12.exe",
   "release_notes_url": "https://keymaster75.github.io/arpy-documentation/release-notes.html",
   "notes_url": "https://keymaster75.github.io/arpy-documentation/release-notes.html",
-  "mandatory": false,
-  "release_notes": "Verzija ARPy 0.9.11 donosi unapređenu stabilnost Word → PDF izvoza, pouzdaniji rad sa višesekcijskim Word dokumentima i poboljšanu kompatibilnost memoranduma za različite šablone revizorskih izveštaja. Uvedena su dodatna poboljšanja Wizard-a, kao i unapređenja stabilnosti i pouzdanosti aplikacije."
+  "mandatory": false
 }
