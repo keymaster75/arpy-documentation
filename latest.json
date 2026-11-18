@@ -1,11 +1,12 @@
 {
-  "version": "0.9.12",
-  "release_date": "2026-08-20",
+  "version": "0.9.13",
+  "release_date": "2026-11-18",
   "minimum_version": "0.9.0",
-  "download_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.9.12/ARPy_Setup_0.9.12.exe",
-  "installer_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.9.12/ARPy_Setup_0.9.12.exe",
-  "installer_filename": "ARPy_Setup_0.9.12.exe",
+  "download_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.9.13/ARPy_Setup_0.9.13.exe",
+  "installer_url": "https://github.com/keymaster75/arpy-documentation/releases/download/v0.9.13/ARPy_Setup_0.9.13.exe",
+  "installer_filename": "ARPy_Setup_0.9.13.exe",
   "release_notes_url": "https://keymaster75.github.io/arpy-documentation/release-notes.html",
   "notes_url": "https://keymaster75.github.io/arpy-documentation/release-notes.html",
-  "mandatory": false
+  "mandatory": false,
+  "release_notes": "Korak 3 Čarobnjaka očitava poslednju numerisanu stranu iz Word mišljenja i predlaže broj za sadržaj. Čarobnjak automatski potvrđuje uspešno ubacivanje sadržaja kroz Word alate. Unos strane je iznad akcija za sadržaj, izbor PDF mišljenja ima svoj odeljak, a pomoć je ažurirana."
 }
