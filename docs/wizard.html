@@ -23,9 +23,9 @@
     </div>
 
     <p class="note">
-        Verzija 0.9.12 dodatno unapređuje Guide workflow, lokalizaciju interfejsa i
-        kontekstualnu pomoć. Nakon izbora PDF mišljenja u Koraku 3 vodič pravilno
-        prelazi na sledeću akciju.
+        Od verzije 0.9.13 Korak 3 može da očita poslednju numerisanu stranu iz
+        Word mišljenja. Očitavanje i ručni unos dostupni su u odeljku iznad
+        akcija za sadržaj. Pomoć za taj korak otvara se preko dugmeta <strong>?</strong>.
     </p>
 
     <div class="box">
@@ -66,11 +66,16 @@
         <div class="process-card">
             <h3>3. Sadržaj i mišljenje</h3>
             <p>
-                Povezuje se PDF mišljenja i izračunava tehnički sadržaj izveštaja.
-                Korisnik može preći na tab Mišljenje revizora ili Word alate.
+                U odeljku <strong>Poslednja numerisana strana za sadržaj</strong>
+                izaberite <strong>Očitaj iz Word mišljenja</strong> i potvrdite
+                predlog ili ručno unesite broj. Zatim izračunajte sadržaj i
+                sačuvajte ga kao TXT.
             </p>
             <p class="note">
-                Sadržaj se ne računa dok nije uneta strana ili izabran PDF mišljenja, čime se smanjuje rizik od pogrešnog TOC-a.
+                Kad Word alati uspešno ubace sadržaj iz TXT fajla tekućeg izveštaja,
+                Čarobnjak automatski ažurira Word status. Ako sadržaj ubacite
+                direktno u Word-u, potvrdite ga ručno. Gotov PDF izaberite u
+                odeljku <strong>PDF mišljenja</strong>.
             </p>
         </div>
 
@@ -104,7 +109,7 @@
         <ol>
             <li>Popuniti osnovne podatke i izabrati output folder.</li>
             <li>Dodati obrasce i proveriti njihov tip i redosled.</li>
-            <li>Uneti poslednju numerisanu stranu mišljenja i izračunati sadržaj.</li>
+            <li>Očitati poslednju numerisanu stranu iz Word mišljenja ili je uneti ručno, pa izračunati sadržaj.</li>
             <li>Sačuvati sadržaj u TXT i ubaciti ga u Word kroz Word alate.</li>
             <li>Pripremiti mišljenje revizora i generisati PDF mišljenja.</li>
             <li>Izabrati PDF mišljenja u Čarobnjaku.</li>

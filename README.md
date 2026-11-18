@@ -1,6 +1,6 @@
 # ARPy – alat za bržu pripremu revizorskih PDF izveštaja
 
-![Version](https://img.shields.io/badge/version-0.9.12-blue)
+![Version](https://img.shields.io/badge/version-0.9.13-blue)
 ![Platform](https://img.shields.io/badge/platform-Windows-blue)
 ![Python](https://img.shields.io/badge/Python-3.12-yellow)
 ![Status](https://img.shields.io/badge/status-Active-success)
@@ -58,12 +58,12 @@ Dokumentacioni repozitorijum sadrži GitHub Pages prezentaciju, release notes, s
    - PDF obrasci
    - napomene
    - drugi prilozi
-   - PDF mišljenja nakon izvoza iz Word-a
 
-3. Priprema sadržaja:
-   - izračun tehničkog sadržaja
-   - čuvanje TXT sadržaja
-   - ubacivanje sadržaja u Word kroz Word alate
+3. Priprema sadržaja i mišljenja:
+   - očitavanje poslednje numerisane strane iz Word mišljenja ili ručni unos
+   - izračunavanje i čuvanje sadržaja u TXT formatu
+   - ubacivanje sadržaja kroz Word alate i automatska potvrda u Čarobnjaku
+   - izvoz i izbor gotovog PDF mišljenja
 
 4. Kreiranje PDF rezultata:
    - Prilozi PDF
@@ -116,6 +116,14 @@ ARPy sadrži više mehanizama za smanjenje rizika od grešaka tokom pripreme izv
 
 ---
 
+
+## Novosti u verziji 0.9.13
+
+- Dugme **Očitaj iz Word mišljenja** predlaže poslednji odštampani broj strane za izračunavanje sadržaja.
+- Posle uspešnog ubacivanja sadržaja iz TXT-a tekućeg izveštaja, Word alati automatski ažuriraju status u Čarobnjaku.
+- Korak 3 prikazuje unos strane pre akcija za sadržaj. Izbor PDF mišljenja je u posebnom odeljku, a pomoć opisuje novi redosled.
+
+[Opis izdanja 0.9.13](https://keymaster75.github.io/arpy-documentation/release-notes.html#v0.9.13)
 
 ## 🆕 Najvažnije novosti u verziji 0.9.12
 
@@ -311,11 +319,7 @@ Metadata uključuje:
 - kratke release notes
 - informaciju da li je nadogradnja obavezna
 
-Za aktuelnu verziju 0.9.12 koristi se installer:
-
-```text
-ARPy_Setup_0.9.12.exe
-```
+Installer za aktuelnu verziju je `ARPy_Setup_0.9.13.exe`. [Izdanje i preuzimanje](https://github.com/keymaster75/arpy-documentation/releases/tag/v0.9.13)
 
 ---
 
